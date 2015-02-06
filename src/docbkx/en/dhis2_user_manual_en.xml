@@ -1,11 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd" [
 <!ENTITY version '2.X'>
-<!ENTITY title 'DHIS 2 User Manual'>
+<!ENTITY title 'Deans Dashboard User Manual'>
  ]>
 <book>
   <title>&title;</title>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources/bookinfo/bookinfo.xml" encoding="UTF-8"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="DeansDashboardIntroduction.xml" encoding="UTF-8"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_preface.xml" encoding="UTF-8"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_user_man_introduction.xml" encoding="UTF-8"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_user_man_getting_started.xml" encoding="UTF-8"/>
@@ -28,20 +29,9 @@
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_user_man_import_export.xml" encoding="UTF-8"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_user_man_data_administration.xml" encoding="UTF-8"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_user_man_settings.xml" encoding="UTF-8"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_user_man_mobile.xml" encoding="UTF-8"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_user_man_data_dimensions.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_user_man_using_event_capture.xml" encoding="UTF-8"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_user_man_using_event_reports.xml" encoding="UTF-8"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_user_man_using_event_visualizer.xml" encoding="UTF-8"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_user_man_using_tracker_capture.xml" encoding="UTF-8"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_user_man_tracker.xml" encoding="UTF-8"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_user_man_profile.xml" encoding="UTF-8"/>
-  <appendix>
-    <title>MyDatamart User Manual</title>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="mydatamart_en.xml" encoding="UTF-8" xpointer="mydatamartOverview"/>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="mydatamart_en.xml" encoding="UTF-8" xpointer="mydatamartInstallation"/>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="mydatamart_en.xml" encoding="UTF-8" xpointer="mydatamartApplication"/>
-  </appendix>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="glossary_en.xml" encoding="UTF-8"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_bibliography.xml" encoding="UTF-8"/>
   <index/>

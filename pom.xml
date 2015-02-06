@@ -2,10 +2,10 @@
 		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.hisp.dhis</groupId>
-	<artifactId>dhis-documentation-docbook</artifactId>
-	<name>DHIS2 Documentation</name>
+	<artifactId>deans-dashboard-documentation-docbook</artifactId>
+	<name>Deans Dashboard Documentation</name>
 	<version>2.17</version>
-	<description>DHIS 2 Documentation</description>
+	<description>Deans Dashboard Documentation</description>
 	<packaging>pom</packaging>
 	<pluginRepositories>
 		<pluginRepository>
@@ -95,7 +95,7 @@
 							<collectXrefTargets>yes</collectXrefTargets> 
 							<targetsFilename>${docbook.target}/en/user/html/dhis2_user_manual_en.html.target.db</targetsFilename>
 							<olinkBaseUri>dhis2_user_manual_en.html</olinkBaseUri>
-							<targetDatabaseDocument>olinkdb.xml</targetDatabaseDocument>							
+							<targetDatabaseDocument>olinkdb.xml</targetDatabaseDocument>	
 							<includes>dhis2_user_manual_en.xml</includes>
 							<postProcess>
 								<copy todir="${docbook.target}/en/user/html/resources/images">
@@ -151,126 +151,6 @@
 							</postProcess>
 						</configuration>
 					</execution>
-					<!-- Chunked HTML CCEI User docs-->
-					<execution>
-						<id>chunked-html-docs-ccei-user</id>
-						<phase>package</phase>
-						<goals>
-							<goal>generate-html</goal>
-						</goals>
-						<configuration>
-							<sourceDirectory>${docbook.source}/en/</sourceDirectory>
-							<targetDirectory>${docbook.target}/en/ccei-user/html/</targetDirectory>
-							<admonGraphics>1</admonGraphics>
-							<admonGraphicsPath>resources/images/admon/</admonGraphicsPath>
-							<htmlStylesheet>resources/css/docbook_bsd.css</htmlStylesheet>
-							<glossaryCollection>resources/glossary_en.xml</glossaryCollection>
-							<sectionAutolabel>1</sectionAutolabel>
-							<sectionLabelIncludesComponentLabel>1</sectionLabelIncludesComponentLabel>
-							<chunkedOutput>true</chunkedOutput>
-							<useEmbedForSvg>1</useEmbedForSvg>							
-							<collectXrefTargets>yes</collectXrefTargets> 
-							<targetsFilename>${docbook.target}/en/ccei-user/html/ccei_user_manual_en.html.target.db</targetsFilename>
-							<olinkBaseUri>ccei_user_manual_en.html</olinkBaseUri>
-							<targetDatabaseDocument>olinkdb.xml</targetDatabaseDocument>							
-							<includes>ccei_user_manual_en.xml</includes>
-							<postProcess>
-								<copy todir="${docbook.target}/en/ccei-user/html/resources/images">
-									<fileset dir="src/docbkx/en/resources/images">
-										<include name="**/*.png" />
-										<include name="**/*.PNG" />
-										<include name="**/*.gif" />
-										<include name="**/*.jpg" />
-										<include name="**/*.svg" />
-									</fileset>
-								</copy>
-								<copy todir="${docbook.target}/en/ccei-user/html/resources/css">
-									<fileset dir="src/docbkx/en/resources/css">
-										<include name="**/*.css" />
-									</fileset>
-								</copy>
-							</postProcess>
-						</configuration>
-					</execution>
-					<!-- Chunked HTML Implementer docs-->
-					<execution>
-						<id>chunked-html-docs-implementer</id>
-						<phase>package</phase>
-						<goals>
-							<goal>generate-html</goal>
-						</goals>
-						<configuration>
-							<admonGraphics>1</admonGraphics>
-							<admonGraphicsPath>resources/images/admon/</admonGraphicsPath>
-							<htmlStylesheet>resources/css/docbook_bsd.css</htmlStylesheet>
-							<glossaryCollection>resources/glossary_en.xml</glossaryCollection>
-							<sectionAutolabel>1</sectionAutolabel>
-							<sectionLabelIncludesComponentLabel>1</sectionLabelIncludesComponentLabel>
-							<chunkedOutput>true</chunkedOutput>
-							<includes>dhis2_implementation_guide_en.xml</includes>
-							<sourceDirectory>${docbook.source}/en/</sourceDirectory>
-							<targetDirectory>${docbook.target}/en/implementer/html</targetDirectory>
-							<postProcess>
-								<copy todir="${docbook.target}/en/implementer/html/resources/images">
-									<fileset dir="src/docbkx/en/resources/images">
-										<include name="**/*.png" />
-										<include name="**/*.PNG" />
-										<include name="**/*.gif" />
-										<include name="**/*.jpg" />
-										<include name="**/*.svg" />
-									</fileset>
-								</copy>
-								<copy todir="${docbook.target}/en/implementer/html/">
-									<fileset dir="src/docbkx/en/dhis2tools/docs">
-										<include name="**/*.png" />
-										<include name="**/*.PNG" />
-										<include name="**/*.gif" />
-										<include name="**/*.jpg" />
-										<include name="**/*.svg" />
-									</fileset>
-								</copy>
-								<copy todir="${docbook.target}/en/implementer/html/resources/css">
-									<fileset dir="src/docbkx/en/resources/css">
-										<include name="**/*.css" />
-									</fileset>
-								</copy>
-							</postProcess>
-						</configuration>
-					</execution>
-					<execution>
-						<id>chunked-html-docs-developer</id>
-						<phase>package</phase>
-						<goals>
-							<goal>generate-html</goal>
-						</goals>
-						<configuration>
-							<admonGraphics>1</admonGraphics>
-							<admonGraphicsPath>resources/images/admon/</admonGraphicsPath>
-							<htmlStylesheet>resources/css/docbook_bsd.css</htmlStylesheet>
-							<sectionAutolabel>1</sectionAutolabel>
-							<sectionLabelIncludesComponentLabel>1</sectionLabelIncludesComponentLabel>
-							<chunkedOutput>true</chunkedOutput>
-							<includes>dhis2_developer_manual.xml</includes>
-							<sourceDirectory>${docbook.source}/en/</sourceDirectory>
-							<targetDirectory>${docbook.target}/en/developer/html</targetDirectory>
-							<postProcess>
-								<copy todir="${docbook.target}/en/developer/html/resources/images">
-									<fileset dir="src/docbkx/en/resources/images">
-										<include name="**/*.png" />
-										<include name="**/*.PNG" />
-										<include name="**/*.gif" />
-										<include name="**/*.jpg" />
-										<include name="**/*.svg" />
-									</fileset>
-								</copy>
-								<copy todir="${docbook.target}/en/developer/html/resources/css">
-									<fileset dir="src/docbkx/en/resources/css">
-										<include name="**/*.css" />
-									</fileset>
-								</copy>
-							</postProcess>
-						</configuration>
-					</execution>
 					<!-- Single page HTML -->
 					<execution>
 						<id>html-docs-en</id>
@@ -286,14 +166,11 @@
 							<sectionAutolabel>1</sectionAutolabel>
 							<sectionLabelIncludesComponentLabel>1</sectionLabelIncludesComponentLabel>
 							<chunkedOutput>false</chunkedOutput>
-							<includes>dhis2_user_manual_en.xml,dhis2_end_user_manual.xml,dhis2_implementation_guide_en.xml,ccei_user_manual_en.xml,dhis2_developer_manual.xml</includes>
+							<includes>dhis2_user_manual_en.xml,dhis2_end_user_manual.xml</includes>
 							<sourceDirectory>${docbook.source}/en/</sourceDirectory>
 							<postProcess>
 								<copy file="target/docbkx/html/dhis2_user_manual_en.html" tofile="${docbook.target}/en/user/html/dhis2_user_manual_en_full.html" />								
 								<copy file="target/docbkx/html/dhis2_end_user_manual.html" tofile="${docbook.target}/en/end-user/html/dhis2_end_user_manual_full.html" />
-								<copy file="target/docbkx/html/dhis2_implementation_guide_en.html" tofile="${docbook.target}/en/implementer/html/dhis2_implementation_guide_en_full.html" />
-								<copy file="target/docbkx/html/ccei_user_manual_en.html" tofile="${docbook.target}/en/ccei-user/html/ccei_user_manual_en_full.html" />
-								<copy file="target/docbkx/html/dhis2_developer_manual.html" tofile="${docbook.target}/en/developer/html/dhis2_developer_manual_full.html" />
 							</postProcess>
 						</configuration>
 					</execution>
@@ -314,102 +191,6 @@
 							<sourceDirectory>${docbook.source}/en/</sourceDirectory>
 							<postProcess>
 								<copy file="target/docbkx/pdf/dhis2_user_manual_en.pdf" todir="${docbook.target}/en/user" />
-							</postProcess>
-						</configuration>
-					</execution>
-
-					<!-- PDF CCEI User docs-->
-					<execution>
-						<id>pdf-docs-en-ccei-user</id>
-						<phase>package</phase>
-						<goals>
-							<goal>generate-pdf</goal>
-						</goals>
-						<configuration>
-							<argLine>-Xmx1024m</argLine>
-							<foCustomization>${docbook.source}/en/resources/xsl/fop-cust.xsl</foCustomization>
-							<doubleSided>1</doubleSided>
-							<paperType>A4</paperType>
-							<includes>ccei_user_manual_en.xml</includes>
-							<sourceDirectory>${docbook.source}/en/</sourceDirectory>
-							<postProcess>
-								<copy file="target/docbkx/pdf/ccei_user_manual_en.pdf" todir="${docbook.target}/en/ccei-user" />
-							</postProcess>
-						</configuration>
-					</execution>
-					<!-- PDF Implementer docs-->
-					<execution>
-						<id>pdf-docs-en-implementer</id>
-						<phase>package</phase>
-						<goals>
-							<goal>generate-pdf</goal>
-						</goals>
-						<configuration>
-							<argLine>-Xmx1024m</argLine>
-							<foCustomization>${docbook.source}/en/resources/xsl/fop-cust.xsl</foCustomization>
-							<doubleSided>1</doubleSided>
-							<paperType>A4</paperType>
-							<includes>dhis2_implementation_guide_en.xml</includes>
-							<sourceDirectory>${docbook.source}/en/</sourceDirectory>
-							<postProcess>
-								<copy file="target/docbkx/pdf/dhis2_implementation_guide_en.pdf" todir="${docbook.target}/en/implementer" />
-							</postProcess>
-						</configuration>
-					</execution>
-					<!-- PDF End User docs-->
-					<execution>
-						<id>pdf-docs-en-end-user</id>
-						<phase>package</phase>
-						<goals>
-							<goal>generate-pdf</goal>
-						</goals>
-						<configuration>
-							<argLine>-Xmx1024m</argLine>
-							<foCustomization>${docbook.source}/en/resources/xsl/fop-cust.xsl</foCustomization>
-							<doubleSided>1</doubleSided>
-							<paperType>A4</paperType>
-							<includes>dhis2_end_user_manual.xml</includes>
-							<sourceDirectory>${docbook.source}/en/</sourceDirectory>
-							<postProcess>
-								<copy file="target/docbkx/pdf/dhis2_end_user_manual.pdf" todir="${docbook.target}/en/end-user" />
-							</postProcess>
-						</configuration>
-					</execution>
-					<!-- PDF Documentation docs-->
-					<execution>
-						<id>pdf-documentation-guide</id>
-						<phase>package</phase>
-						<goals>
-							<goal>generate-pdf</goal>
-						</goals>
-						<configuration>
-							<argLine>-Xmx1024m</argLine>
-							<foCustomization>${docbook.source}/en/resources/xsl/fop-cust.xsl</foCustomization>
-							<doubleSided>1</doubleSided>
-							<paperType>A4</paperType>
-							<includes>dhis2_documentation_guide_book.xml</includes>
-							<sourceDirectory>${docbook.source}/en/</sourceDirectory>
-							<postProcess>
-								<copy file="target/docbkx/pdf/dhis2_documentation_guide_book.pdf" tofile="${docbook.target}/en/implementer/dhis2_documentation_guide.pdf" />
-							</postProcess>
-						</configuration>
-					</execution>
-					<!-- PDF Developer docs-->
-					<execution>
-						<id>pdf-developer-guide</id>
-						<phase>package</phase>
-						<goals>
-							<goal>generate-pdf</goal>
-						</goals>
-						<configuration>
-							<argLine>-Xmx1024m</argLine>
-							<foCustomization>${docbook.source}/en/resources/xsl/fop-cust.xsl</foCustomization>
-							<doubleSided>1</doubleSided>
-							<paperType>A4</paperType>
-							<includes>dhis2_developer_manual.xml</includes>
-							<sourceDirectory>${docbook.source}/en/</sourceDirectory>
-							<postProcess>
-								<copy file="target/docbkx/pdf/dhis2_developer_manual.pdf" tofile="${docbook.target}/en/developer/dhis2_developer_manual.pdf" />
 							</postProcess>
 						</configuration>
 					</execution>
