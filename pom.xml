@@ -92,10 +92,6 @@
 							<sectionLabelIncludesComponentLabel>1</sectionLabelIncludesComponentLabel>
 							<chunkedOutput>true</chunkedOutput>
 							<useEmbedForSvg>1</useEmbedForSvg>							
-							<collectXrefTargets>yes</collectXrefTargets> 
-							<targetsFilename>${docbook.target}/en/user/html/dhis2_user_manual_en.html.target.db</targetsFilename>
-							<olinkBaseUri>dhis2_user_manual_en.html</olinkBaseUri>
-							<targetDatabaseDocument>olinkdb.xml</targetDatabaseDocument>	
 							<includes>dhis2_user_manual_en.xml</includes>
 							<postProcess>
 								<copy todir="${docbook.target}/en/user/html/resources/images">
@@ -174,7 +170,6 @@
 							</postProcess>
 						</configuration>
 					</execution>
-
 					<!-- PDF User docs-->
 					<execution>
 						<id>pdf-docs-en-user</id>
