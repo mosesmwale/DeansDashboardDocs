@@ -1,0 +1,9 @@
+src/docbkx/build.properties
+target/
+*.bak
+*.~*
+.DS_Store
+*.iml
+.idea/
+*.swp
+
