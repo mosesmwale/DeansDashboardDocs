@@ -1,8 +1,8 @@
 <html><head>
       <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-   <title>Technical background</title><link rel="stylesheet" type="text/css" href="resources/css/docbook_bsd.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><meta name="keywords" content="DHIS2, HMIS, aggregate data, Health Management Information System, Integrated data repository, Health Information System"><link rel="home" href="deans_dashboard_implementation_guide.html" title="Deans Dashboard Implementation Guide"><link rel="up" href="ch07.html" title="Chapter&nbsp;7.&nbsp;What is DHIS 2?"><link rel="prev" href="ch07s03.html" title="Use of DHIS 2 in HIS: data collection, processing, interpretation, and analysis."><link rel="next" href="ch07s05.html" title="Difference between Aggregated and Patient data in a HIS"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Technical background</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch07s03.html">Prev</a>&nbsp;</td><th width="60%" align="center">Chapter&nbsp;7.&nbsp;What is DHIS 2?</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch07s05.html">Next</a></td></tr></table><hr></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d5e228"></a>Technical background</h2></div></div></div>
+   <title>Technical background</title><link rel="stylesheet" type="text/css" href="resources/css/docbook_bsd.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><meta name="keywords" content="DHIS2, HMIS, aggregate data, Health Management Information System, Integrated data repository, Health Information System"><link rel="home" href="deans_dashboard_implementation_guide.html" title="Deans Dashboard Implementation Guide"><link rel="up" href="ch07.html" title="Chapter&nbsp;7.&nbsp;What is DHIS 2?"><link rel="prev" href="ch07s03.html" title="Use of DHIS 2 in HIS: data collection, processing, interpretation, and analysis."><link rel="next" href="ch07s05.html" title="Difference between Aggregated and Patient data in a HIS"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Technical background</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch07s03.html">Prev</a>&nbsp;</td><th width="60%" align="center">Chapter&nbsp;7.&nbsp;What is DHIS 2?</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch07s05.html">Next</a></td></tr></table><hr></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d5e209"></a>Technical background</h2></div></div></div>
     
-    <div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d5e230"></a>DHIS as a platform</h3></div></div></div>
+    <div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d5e211"></a>DHIS as a platform</h3></div></div></div>
       
       <p>DHIS can be perceived as a platform on several levels. First, the application database is designed ground-up with flexibility in mind. Data structures such as data elements, organisation units, forms and user roles can be defined completely freely through the application user interface. This makes it possible for the system to be adapted to a multitude of locale contexts and use-cases. We have seen that DHIS supports most major requirements for routine data capture and analysis emerging in country implementations. It also makes it possible for DHIS to serve as management system for domains such as logistics, labs and finance.</p>
       <p>Second, due to the modular design of DHIS it can be extended with additional software modules. These software modules can live side by side with the core modules of DHIS and can be integrated into the DHIS portal and menu system. This is a powerful feature as it makes it possible to extend the system with extra functionality when needed, typically for country specific requirements as earlier pointed out.</p>
@@ -17,7 +17,7 @@
         </li></ul></div>
       <div align="center"><table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0; cellspacing: 0;" width="80%"><tr><td align="center"><img src="resources/images/implementation_guide/dhis_platform.png" align="middle" width="100%"></td></tr></table></div>
     </div>
-    <div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d5e244"></a>Understanding platform independence</h3></div></div></div>
+    <div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d5e225"></a>Understanding platform independence</h3></div></div></div>
       
       <p>All computers have an Operating System (OS) to manage it and the
         programs running it. The operating system serves as the middle layer between the
@@ -32,10 +32,10 @@
         web browsers, although currently either Google Chrome, Mozilla Firefox or Opera are
         recommended.</p>
     </div>
-    <div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d5e249"></a>Deployment strategies - online vs offline</h3></div></div></div>
+    <div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d5e230"></a>Deployment strategies - online vs offline</h3></div></div></div>
       
       <p>DHIS 2 is a network enabled application and can be accessed over the Internet, a local intranet and as a locally installed system. The deployment alternatives for DHIS 2 are in this chapter defined as i) offline deployment ii) online deployment and iii) hybrid deployment. The meaning and differences will be discussed in the following sections.</p>
-      <div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d5e252"></a>Offline Deployment</h4></div></div></div>
+      <div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d5e233"></a>Offline Deployment</h4></div></div></div>
         
         <p>An offline deployment implies that multiple standalone offline instances are installed for end users, typically at the district level. The system is maintained primarily by the end users/district health officers who enters data and generate reports from the system running on their local server. The system will also typically be maintained by a national super-user team who pay regular visits to the district deployments. Data is moved upwards in the hierarchy by the end users producing data exchange files which are sent electronically by email or physically by mail or personal travel. (Note that the brief Internet connectivity required for sending emails does not qualify for being defined as online). This style of deployment has the obvious benefit that it works when appropriate Internet connectivity is not available. On the other side there are significant challenges with this style which are described in the following section.</p>
         <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
@@ -48,7 +48,7 @@
             <p><span class="bold"><strong>Database maintenance: </strong></span>A prerequisite for an efficient system is that all users enter data with a standardized meta-data set (data elements, forms etc). As with the previous point about software upgrades, distribution of changes to the meta-data set to numerous offline installations requires end user competence if the updates are sent electronically or a well-organized super-user team. Failure to keep the meta-data set synchronized will lead to loss of ability to move data from the districts and/or an inconsistent national database since the data entered for instance at the district level will not be compatible with the data at the national level.</p>
           </li></ul></div>
       </div>
-      <div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d5e268"></a>Online deployment</h4></div></div></div>
+      <div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d5e249"></a>Online deployment</h4></div></div></div>
         
         <p>An online deployment implies that a single instance of the application is set up on a server connected to the Internet. All users (clients) connect to the online central server over the Internet using a web browser. This style of deployment currently benefits from the  huge investments in and expansions of mobile networks in developing countries. This makes it possible to access online servers in even the most rural areas using mobile Internet modems  (also referred to as <span class="italic">dongles</span>).  </p>
         <p>This online deployment style has huge positive implications for the implementation process and application maintenance compared to the traditional offline standalone style:</p>
@@ -68,7 +68,7 @@
           chapter in this guide, which cater to information flow in situations when Internet
           connectivity may be challenging.</p>
       </div>
-      <div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d5e287"></a>Hybrid deployment</h4></div></div></div>
+      <div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d5e268"></a>Hybrid deployment</h4></div></div></div>
         
         <p>From the discussion so far one realizes that the online deployment style is favourable over the offline style but requires decent Internet connectivity where it will be used. It is important to notice that the mentioned styles can co-exist in a common deployment. It is perfectly feasible to have online as well as offline deployments within a single country. The general rule would be that districts and facilities should access the system online over the Internet where sufficient Internet connectivity exist, and offline systems should be deployed to districts where this is not the case. </p>
         <p>Defining decent Internet connectivity precisely is hard but as a rule of thumb the download speed should be minimum 10 Kbyte/second and accessibility should be minimum 70% of the time. </p>
@@ -82,7 +82,7 @@
           investigated when deciding which deployment approach to opt for as it might differ and
           cover different parts of the country.</p>
       </div>
-      <div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d5e292"></a>Server hosting</h4></div></div></div>
+      <div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d5e273"></a>Server hosting</h4></div></div></div>
         
         <p>The online deployment approach raises the question of where and how to host the server which will run the DHIS 2 application. Typically there are several options:</p>
         <div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem">

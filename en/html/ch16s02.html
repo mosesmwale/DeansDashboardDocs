@@ -1,6 +1,6 @@
 <html><head>
       <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-   <title>Data Entry Forms</title><link rel="stylesheet" type="text/css" href="resources/css/docbook_bsd.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><meta name="keywords" content="DHIS2, HMIS, aggregate data, Health Management Information System, Integrated data repository, Health Information System"><link rel="home" href="deans_dashboard_implementation_guide.html" title="Deans Dashboard Implementation Guide"><link rel="up" href="ch16.html" title="Chapter&nbsp;16.&nbsp;Data sets and data entry forms"><link rel="prev" href="ch16.html" title="Chapter&nbsp;16.&nbsp;Data sets and data entry forms"><link rel="next" href="ch17.html" title="Chapter&nbsp;17.&nbsp;User management"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Data Entry Forms</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch16.html">Prev</a>&nbsp;</td><th width="60%" align="center">Chapter&nbsp;16.&nbsp;Data sets and data entry forms</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch17.html">Next</a></td></tr></table><hr></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d5e1288"></a>Data Entry Forms</h2></div></div></div>
+   <title>Data Entry Forms</title><link rel="stylesheet" type="text/css" href="resources/css/docbook_bsd.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><meta name="keywords" content="DHIS2, HMIS, aggregate data, Health Management Information System, Integrated data repository, Health Information System"><link rel="home" href="deans_dashboard_implementation_guide.html" title="Deans Dashboard Implementation Guide"><link rel="up" href="ch16.html" title="Chapter&nbsp;16.&nbsp;Data sets and data entry forms"><link rel="prev" href="ch16.html" title="Chapter&nbsp;16.&nbsp;Data sets and data entry forms"><link rel="next" href="ch17.html" title="Chapter&nbsp;17.&nbsp;User management"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Data Entry Forms</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch16.html">Prev</a>&nbsp;</td><th width="60%" align="center">Chapter&nbsp;16.&nbsp;Data sets and data entry forms</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch17.html">Next</a></td></tr></table><hr></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d5e1269"></a>Data Entry Forms</h2></div></div></div>
     
     <p>Once you have assigned a data set to an orgunit that data set will be made available in
       Data Entry for the orgunits you have assigned it to.  A default data entry form will then be
@@ -9,7 +9,7 @@
       categorycombination, such as age groups or gender then additional columns will be
       automatically generated in the default form based on the different options/dimensions. </p>
     <p>If you use more than one dataelement category combination you will get multiple columns in the data entry form with different column headings for the options. In addition to the default list-based data entry form there are two more alternatives, the section-based form and the custom form.</p>
-    <div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d5e1292"></a>Section forms</h3></div></div></div>
+    <div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d5e1273"></a>Section forms</h3></div></div></div>
       
       <p>Section forms allow for a bit more flexibility when it comes to using tabular forms and
         are quick and simple to design. Often your data entry form will need multiple tables with
@@ -85,7 +85,7 @@
       <p>You can to intermediary saving by clicking on the Save button, and this will not close the window. It is recommended to save often to ensure you do not loose your work. </p>
       <p>When you are done or want to test your form in data entry click on &lt;Save and close&gt;.</p>
     </div>
-    <div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d5e1343"></a>Scripting in custom forms</h3></div></div></div>
+    <div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d5e1324"></a>Scripting in custom forms</h3></div></div></div>
       
       <p>In custom data entry form you can use javascript to create dynamic behavior and
         customziations. The DHIS 2 data entry module provides a range of events which you can
@@ -93,7 +93,7 @@
         document element. The jQuery event object and the data set identifier are always the first
         two arguments provided to the callback functions. The table below provides an overview of
         the events and when they are triggered.</p>
-      <div class="table"><a name="d5e1346"></a><p class="title"><b>Table&nbsp;16.1.&nbsp;Data entry events</b></p><div class="table-contents">
+      <div class="table"><a name="d5e1327"></a><p class="title"><b>Table&nbsp;16.1.&nbsp;Data entry events</b></p><div class="table-contents">
         
         <table summary="Data entry events" border="1"><colgroup><col class="c1"><col class="c2"><col class="newCol3"></colgroup><thead><tr><th>Key</th><th>Description</th><th>Arguments</th></tr></thead><tbody><tr><td>dhis2.de.event.formLoaded</td><td>Triggered after the data entry form is rendered, but before data values are set
                 in entry fields.</td><td>Event | Data set ID</td></tr><tr><td>dhis2.de.event.dataValuesLoaded</td><td>Triggered after data values are set in entry fields.</td><td>Event | Data set ID</td></tr><tr><td>dhis2.de.event.formReady</td><td>Triggered when the data entry form is completely rendered and loaded with all

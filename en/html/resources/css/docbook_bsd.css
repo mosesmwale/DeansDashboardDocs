@@ -227,3 +227,13 @@ BLOCKQUOTE.WARNING {
 	padding: 0.2em 2em;  
 	width: 90%;  
 }  
+
+.toc {
+    border: 2px ridge;
+    background: none repeat scroll 0 0 lightblue;
+}
+
+
+dl.toc {
+    border: medium none;
+}
