@@ -10,6 +10,9 @@
   <part label="Volume I: What is the Dean's Dashboard?">
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="deans_dashboard_implementation_guide_introduction.xml" encoding="UTF-8"/>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="deans_dashboard_implementation_guide_highlevel_intro.xml" encoding="UTF-8"/>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="deans_dashboard_implementation_guide_readiness.xml" encoding="UTF-8"/>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="deans_dashboard_implementation_guide_key_indicators.xml" encoding="UTF-8"/>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="deans_dashboard_implementation_guide_step_by_step.xml" encoding="UTF-8"/>
   </part>
   <part label="Volume II: End User Guide">
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="deans_dashboard_implementation_guide_end_user_intro.xml" encoding="UTF-8"/>

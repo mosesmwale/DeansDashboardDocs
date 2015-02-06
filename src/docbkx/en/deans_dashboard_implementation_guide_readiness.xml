@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "docbookV4.4/docbookx.dtd" []>
+<chapter>
+  <title>Organizational Readiness</title>
+ 
+  <section>
+    <title>Resources and Infrastructure</title>
+    <para>
+      In terms of infrastructure needed, two options exist—in the cloud or local to the institution. Small institutions may prefer to pay for a cloud-based implementation (that is, to access and use the software entirely online) as purchasing and maintaining servers may be prohibitive. Institutions with strong ICT units may prefer to install the software locally in their data centers. Configuring and implementing the system is not overly complex, but support will be essential to new users.
+    </para>
+  </section>
+  <section>
+    <title>Organizational Readiness</title>
+    <para>
+      Is Your Organization Ready for the Dean’s Dashboard?
+    </para>
+    <para>
+      Answering these questions can help your institution understand its level of readiness to initiate the Dean’s Dashboard program. You may find it helpful to have a colleague review your responses or to answer the questions with a larger group (e.g., senior leaders).  Has your institution clearly defined the need to use the Dean’s Dashboard?
+
+    </para>
+    <orderedlist numeration="arabic">
+      <listitem>
+	Have you clearly defined the need that is driving your institution to consider implementing the Dean’s Dashboard?
+	<blockquote>
+	  An organization is more likely to be ready to undertake a Dean’s Dashboard initiative when it has objective information to support the need for improving specific areas. 
+	</blockquote>
+      </listitem>
+      <listitem>
+	Who in your organization uses information to guide decision making and process improvement?
+	<blockquote>
+	  Dean’s Dashboard is an information system that offers informational reports on a number of indicators important to your institution. Understanding than one individual or a team of persons using that information can affect how successful it can be for addressing your situation. 
+	</blockquote>
+      </listitem>
+      <listitem>
+	Is now the right time for implementing an information tool such as the Dean’s Dashboard (i.e., it will not compete with other major changes currently being made at your institution)?
+	<blockquote>
+	  If your organization is currently experiencing many changes, it may not be the ideal moment to begin implementing the Dean’s Dashboard initiative. Attempting to manage multiple change efforts at one time may degrade your institution's ability and employees' willingness to implement and sustain the Dean’s Dashboard effort. The program may be viewed as a distraction rather than a solution.
+	</blockquote>
+      </listitem>
+      <listitem>
+	Will your institution's leaders support the effort required to implement and sustain the Dean’s Dashboard initiative?
+	<blockquote>
+	  It is essential that the leaders of your institution actively support and champion Dean’s Dashboard. Leaders needs to understand the requirements of the program (e.g., identification of indicators in an iterative process spanning several weeks, technical preparation and training of system users, regular meetings to reinforce concepts and skills) and be willing to provide the personnel, time, and resources required to successfully implement and sustain the program. 
+	</blockquote>
+      </listitem>
+      <listitem>
+	Will your institution provide sufficient staff with the necessary skills and time to support the development and implementation and use of the Dean’s Dashboard?
+	<blockquote>
+	  It is important to find individuals with the right characteristics to serve as users to increase the success of the Dean’s Dashboard initiative. 
+	</blockquote>
+      </listitem>
+      <listitem>
+	Will your institution allow time for personnel to attend training?
+	<blockquote>
+	  While the Dean’s Dashboard will be designed by participating institutions, some direct staff training will be required. The full training element of the program includes up to XX hours of classroom learning; however, your institution may decide to train only one segment (e.g., a specific indicator or set of related indicators) that may require 1 hour. To preclude disruptions and scheduling problems and to maximize learning, participants should be excused from all duties while attending class.
+	</blockquote>
+      </listitem>
+    </orderedlist>
+  </section>
+
+  <section>
+    <title>Best practices in planning deployment/project management</title>
+    <section>
+      <title>stakeholder engagement</title>
+    </section>
+    <section>
+      <title>project management</title>
+    </section>
+    <section>
+      <title>defining scope</title>
+    </section>
+  </section>
+  <section>
+    <title>Getting data:</title>
+    <section>
+      <title>What is on the dashboard?</title>
+    </section>
+    <section>
+      <title>Where does the data come from?</title>
+    </section>
+    <section>
+      <title>who has the data</title>
+    </section>
+    <section>
+      <title>what parts of the institution have the data</title>
+    </section>
+  </section>
+</chapter>
