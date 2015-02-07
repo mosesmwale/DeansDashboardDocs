@@ -75,8 +75,10 @@
 				</configuration>
 				<!-- Chunked HTML User docs-->
 				<executions>
+					<!-- Chunked HTML End User docs-->
+
 					<execution>
-						<id>chunked-html-docs-user</id>
+						<id>chunked-html-docs-deans-dashboard-implementation-guide</id>
 						<phase>package</phase>
 						<goals>
 							<goal>generate-html</goal>
@@ -88,49 +90,18 @@
 							<admonGraphicsPath>resources/images/admon/</admonGraphicsPath>
 							<htmlStylesheet>resources/css/docbook_bsd.css</htmlStylesheet>
 							<glossaryCollection>resources/glossary_en.xml</glossaryCollection>
-							<sectionAutolabel>1</sectionAutolabel>
-							<sectionLabelIncludesComponentLabel>1</sectionLabelIncludesComponentLabel>
+							<sectionautolabel>1</sectionautolabel>
+							<sectionlabelincludescomponentlabel>1</sectionlabelincludescomponentlabel>
 							<chunkedOutput>true</chunkedOutput>
-							<useEmbedForSvg>1</useEmbedForSvg>							
-							<includes>dhis2_user_manual_en.xml</includes>
-							<postProcess>
-								<copy todir="${docbook.target}/en/user/html/resources/images">
-									<fileset dir="src/docbkx/en/resources/images">
-										<include name="**/*.png" />
-										<include name="**/*.PNG" />
-										<include name="**/*.gif" />
-										<include name="**/*.jpg" />
-										<include name="**/*.svg" />
-									</fileset>
-								</copy>
-								<copy todir="${docbook.target}/en/user/html/resources/css">
-									<fileset dir="src/docbkx/en/resources/css">
-										<include name="**/*.css" />
-									</fileset>
-								</copy>
-							</postProcess>
-						</configuration>
-					</execution>
-					<!-- Chunked HTML End User docs-->
-					<execution>
-						<id>chunked-html-docs-end-user</id>
-						<phase>package</phase>
-						<goals>
-							<goal>generate-html</goal>
-						</goals>
-						<configuration>
-							<admonGraphics>1</admonGraphics>
-							<admonGraphicsPath>resources/images/admon/</admonGraphicsPath>
-							<htmlStylesheet>resources/css/docbook_bsd.css</htmlStylesheet>
-							<glossaryCollection>resources/glossary_en.xml</glossaryCollection>
-							<sectionAutolabel>1</sectionAutolabel>
-							<sectionLabelIncludesComponentLabel>1</sectionLabelIncludesComponentLabel>
-							<chunkedOutput>true</chunkedOutput>
-							<includes>dhis2_end_user_manual.xml</includes>
+							<collectXrefTargets>yes</collectXrefTargets> 
+							<targetsFilename>${docbook.target}/en/deans_dashboard_implementation_guide/html/deans_dashboard_implementation_guide.html.target.db</targetsFilename>
+							<olinkBaseUri>deans_dashboard_implementation_guide.html</olinkBaseUri>
+							<targetDatabaseDocument>olinkdb.xml</targetDatabaseDocument>	
+							<includes>deans_dashboard_implementation_guide.xml</includes>
 							<sourceDirectory>${docbook.source}/en/</sourceDirectory>
-							<targetDirectory>${docbook.target}/en/end-user/html</targetDirectory>
+							<targetDirectory>${docbook.target}/en/deans-dashboard-implementation-guide/html</targetDirectory>
 							<postProcess>
-								<copy todir="${docbook.target}/en/end-user/html/resources/images">
+								<copy todir="${docbook.target}/en/deans-dashboard-implementation-guide/html/resources/images">
 									<fileset dir="src/docbkx/en/resources/images">
 										<include name="**/*.png" />
 										<include name="**/*.PNG" />
@@ -139,7 +110,7 @@
 										<include name="**/*.svg" />
 									</fileset>
 								</copy>
-								<copy todir="${docbook.target}/en/end-user/html/resources/css">
+								<copy todir="${docbook.target}/en/deans-dashboard-implementation-guide/html/resources/css">
 									<fileset dir="src/docbkx/en/resources/css">
 										<include name="**/*.css" />
 									</fileset>
@@ -149,7 +120,7 @@
 					</execution>
 					<!-- Single page HTML -->
 					<execution>
-						<id>html-docs-en</id>
+						<id>html-docs-deans-dashboard-implementaiton-guide</id>
 						<phase>package</phase>
 						<goals>
 							<goal>generate-html</goal>
@@ -162,17 +133,17 @@
 							<sectionAutolabel>1</sectionAutolabel>
 							<sectionLabelIncludesComponentLabel>1</sectionLabelIncludesComponentLabel>
 							<chunkedOutput>false</chunkedOutput>
-							<includes>dhis2_user_manual_en.xml,dhis2_end_user_manual.xml</includes>
+							<includes>deans_dashboard_implementation_guide.xml</includes>
 							<sourceDirectory>${docbook.source}/en/</sourceDirectory>
 							<postProcess>
-								<copy file="target/docbkx/html/dhis2_user_manual_en.html" tofile="${docbook.target}/en/user/html/dhis2_user_manual_en_full.html" />								
-								<copy file="target/docbkx/html/dhis2_end_user_manual.html" tofile="${docbook.target}/en/end-user/html/dhis2_end_user_manual_full.html" />
+								<copy file="target/docbkx/html/deans_dashboard_implementation_guide.html" tofile="${docbook.target}/en/deans-dashboard-implementation-guide/html/deans_dashboard_implementation_guide_full.html" />
 							</postProcess>
 						</configuration>
 					</execution>
+
 					<!-- PDF User docs-->
 					<execution>
-						<id>pdf-docs-en-user</id>
+						<id>pdf-docs-deans-dashboard-implementation-guide</id>
 						<phase>package</phase>
 						<goals>
 							<goal>generate-pdf</goal>
@@ -182,30 +153,32 @@
 							<foCustomization>${docbook.source}/en/resources/xsl/fop-cust.xsl</foCustomization>
 							<doubleSided>1</doubleSided>
 							<paperType>A4</paperType>
-							<includes>dhis2_user_manual_en.xml</includes>
+							<includes>deans_dashboard_implementation_guide.xml</includes>
 							<sourceDirectory>${docbook.source}/en/</sourceDirectory>
 							<postProcess>
-								<copy file="target/docbkx/pdf/dhis2_user_manual_en.pdf" todir="${docbook.target}/en/user" />
+								<copy file="target/docbkx/pdf/deans_dashboard_implementation_guide.pdf" todir="${docbook.target}/en/deans-dashboard-implementation-guide" />
 							</postProcess>
 						</configuration>
 					</execution>
-					<!-- Adds an RTF build, but broken at the moment.  
-					<execution>
-		   <id>rtf-docs-user</id>
-            <phase>package</phase>
-            <goals>
-              <goal>generate-rtf</goal>
-            </goals>
-            <configuration>
-              <argLine>-Xmx1024m</argLine>
-              <doubleSided>1</doubleSided>
-              <includes>dhis2_user_manual_en.xml</includes>
-              <sourceDirectory>${docbook.source}/en/</sourceDirectory>
-              <postProcess>
-                <copy file="target/docbkx/rtf/dhis2_end_user_manual.rtf" todir="${docbook.target}/en/user" />
-              </postProcess>
-            </configuration>
-          </execution> -->
+
+					<!-- RTF User docs-->
+<!--					<execution>
+						<id>rtf-docs-deans-dashboard-implementation-guide</id>
+						<phase>package</phase>
+						<goals>
+							<goal>generate-rtf</goal>
+						</goals>
+						<configuration>
+							<foCustomization>${docbook.source}/en/resources/xsl/fop-cust.xsl</foCustomization>
+							<includes>deans_dashboard_implementation_guide.xml</includes>
+							<sourceDirectory>${docbook.source}/en/</sourceDirectory>
+							<postProcess>
+								<copy file="target/docbkx/rtf/deans_dashboard_implementation_guide.rtf" todir="${docbook.target}/en/deans-dashboard-implementation-guide" />
+							</postProcess>
+						</configuration>
+					</execution>
+-->
+
 				</executions>
 				<dependencies>
 					<dependency>
