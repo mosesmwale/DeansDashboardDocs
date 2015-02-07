@@ -162,20 +162,22 @@
 					</execution>
 
 					<!-- RTF User docs-->
-<!--					<execution>
-						<id>rtf-docs-deans-dashboard-implementation-guide</id>
-						<phase>package</phase>
-						<goals>
-							<goal>generate-rtf</goal>
-						</goals>
-						<configuration>
-							<foCustomization>${docbook.source}/en/resources/xsl/fop-cust.xsl</foCustomization>
-							<includes>deans_dashboard_implementation_guide.xml</includes>
-							<sourceDirectory>${docbook.source}/en/</sourceDirectory>
-							<postProcess>
-								<copy file="target/docbkx/rtf/deans_dashboard_implementation_guide.rtf" todir="${docbook.target}/en/deans-dashboard-implementation-guide" />
-							</postProcess>
-						</configuration>
+<!--
+					<execution>
+					  <id>rtf-docs-deans-dashboard-implementation-guide</id>
+					  <phase>package</phase>
+					  <goals>
+					    <goal>generate-rtf</goal>
+					  </goals>
+					  <configuration>
+					    <argLine>-Xmx1024m</argLine>
+					    <doubleSided>1</doubleSided>
+					    <includes>dhis2_user_manual_en.xml</includes>
+					    <sourceDirectory>${docbook.source}/en/</sourceDirectory>
+					    <postProcess>
+					      <copy file="target/docbkx/rtf/deans_dashboard_implementation_guide.rtf" todir="${docbook.target}/en/deans-dashboard-implementation-guide" />
+					    </postProcess>
+					  </configuration>
 					</execution>
 -->
 
