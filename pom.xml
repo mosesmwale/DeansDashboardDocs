@@ -172,7 +172,7 @@
 					  <configuration>
 					    <argLine>-Xmx1024m</argLine>
 					    <doubleSided>1</doubleSided>
-					    <includes>dhis2_user_manual_en.xml</includes>
+					    <includes>deans_dashboard_implementation_guide.xml</includes>
 					    <sourceDirectory>${docbook.source}/en/</sourceDirectory>
 					    <postProcess>
 					      <copy file="target/docbkx/rtf/deans_dashboard_implementation_guide.rtf" todir="${docbook.target}/en/deans-dashboard-implementation-guide" />
