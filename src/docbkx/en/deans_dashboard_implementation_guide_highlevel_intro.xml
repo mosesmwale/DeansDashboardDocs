@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "docbookV4.4/docbookx.dtd" []>
+<chapter>
+  <title>School Performance</title>
+
+  <section>
+
+    <title>Performance Areas</title>
+    The primary use case of the Dean’s Dashboard is tool to monitor key school management performance areas by school leaders.  This should be achieved by supporting these main requirements:
+    <itemizedlist mark='bullet'> 
+      <listitem>
+	The design of indicators to track school performance areas  
+      </listitem>
+      <listitem>
+	Visualization and trend analysis of the designed indicators
+      </listitem>
+      <listitem>
+	Data entry for the periodic numeric data used to calculate chosen indicators
+      </listitem>
+    </itemizedlist>
+
+    Secondary requirements include:
+    <itemizedlist mark='bullet'> 
+      <listitem>
+	Limiting access to edit and view data based on user’s role and organizational affiliation within the school
+      </listitem>
+      <listitem>
+	Ability to monitor data entry statistics
+      </listitem>
+      <listitem>
+	Ability to import data from secondary systems or other devices (e.g. mobile phones)
+      </listitem>
+      <listitem>
+      Ability to embed visuals into external applications or web pages
+      </listitem>
+    </itemizedlist>
+  </section>
+</chapter>

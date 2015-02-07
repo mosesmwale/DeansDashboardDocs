@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "docbookV4.4/docbookx.dtd" []>
+<chapter>
+  <title>What is the Dean’s Dashboard ?</title>
+  
+    <para>Contextualization/Overview of using DHIS2 as Dean’s Dashboard - adapted from materials provided by CapPlus</para>
+  <section>
+
+    <title>Overview</title>
+    <para>
+      The Dean’s Dashboard is most effective as part of a strategic planning process. Before a school can implement a dashboard, it needs access to high-quality, routinely collected, individual-level data. While data are usable in any easily accessed format, having data in a digital system is ideal, even in electronic spreadsheets. Pilot institutions found that setting up the dashboard’s data and reports was relatively easy once the DHIS 2 interface was mastered. After a representative of an institution has been trained to configure and utilize DHIS 2, few resources are required to continue and expand its usefulness. 
+    </para>
+
+
+    <para>
+      Health workforce educational institutions around the globe are struggling to meet the increasing demand for health workers capable of providing quality health services to expanding populations. These institutions must find ways to produce more health workers within current, marginally expanding, or even decreasing budgets. More effective and efficient management of education and training institutions can play a major role in a country’s ability to scale up its production of competent and qualified health workers.
+    </para>
+    <para>
+      The Dean’s Dashboard is a computerized tool to guide a school’s management team in defining management goals and tracking progress toward goal achievement. The Dean’s Dashboard is meant to measure progress and chart trends, indicating either improvement over time or need for strategic action.
+    </para>
+	
+
+    <section>
+      <title>Getting Support</title>
+      Getting connected to DHIS2 community (for deployment support, academies, etc).
+      <graphic srccredit="http://dhis2.org" fileref="resources/images/deans_dashboard/dhis2_countries.png"/>
+	
+    </section>
+    
+
+  </section>
+
+</chapter>
