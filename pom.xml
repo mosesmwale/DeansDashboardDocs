@@ -189,6 +189,23 @@
 							</postProcess>
 						</configuration>
 					</execution>
+					<!-- Adds an RTF build, but broken at the moment.  
+					<execution>
+		   <id>rtf-docs-user</id>
+            <phase>package</phase>
+            <goals>
+              <goal>generate-rtf</goal>
+            </goals>
+            <configuration>
+              <argLine>-Xmx1024m</argLine>
+              <doubleSided>1</doubleSided>
+              <includes>dhis2_user_manual_en.xml</includes>
+              <sourceDirectory>${docbook.source}/en/</sourceDirectory>
+              <postProcess>
+                <copy file="target/docbkx/rtf/dhis2_end_user_manual.rtf" todir="${docbook.target}/en/user" />
+              </postProcess>
+            </configuration>
+          </execution> -->
 				</executions>
 				<dependencies>
 					<dependency>
