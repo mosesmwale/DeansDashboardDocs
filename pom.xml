@@ -94,9 +94,9 @@
 				    <id>create-pot-for-translations</id>
 				    <phase>package</phase>  
 				    <configuration>
-				      <tasks name="combine">    
+				      <tasks name="translations">    
 					<exec  
-					    dir="${docbook.target}/en/"  
+					    dir="${docbook.target}/en/deans_dashboard_implementation_guide"  
 					    executable="/usr/bin/itstool"  
 					    failonerror="true">  
 					  <arg line="deans_dashboard_implementation_guide_full.xml -o deans_dashboard_implementation_guide_full.pot"/>  
@@ -116,7 +116,7 @@
 				      <tasks name="create-odf">    
 					<delete file="${docbook.target}/en/deans_dashboard_implementation_guide_full.odt"/>
 					<exec  
-					    dir="${docbook.target}/en/"  
+					    dir="${docbook.target}/en/deans_dashboard_implementation_guide"  
 					    executable="/usr/bin/docbook2odf"  
 					    failonerror="true">  
 					  <arg line="deans_dashboard_implementation_guide_full.xml "/>  
@@ -135,7 +135,7 @@
 				      <tasks name="create-doc">    
 					<delete file="${docbook.target}/en/deans_dashboard_implementation_guide_full.doc"/>
 					<exec  
-					    dir="${docbook.target}/en/"  
+					    dir="${docbook.target}/en/deans_dashboard_implementation_guide"  
 					    executable="/usr/bin/unoconv"  
 					    failonerror="true">  
 					  <arg line="-f doc deans_dashboard_implementation_guide_full.odt "/>  
@@ -178,14 +178,14 @@
 							<sectionlabelincludescomponentlabel>1</sectionlabelincludescomponentlabel>
 							<chunkedOutput>true</chunkedOutput>
 							<collectXrefTargets>yes</collectXrefTargets> 
-							<targetsFilename>${docbook.target}/en/deans_dashboard_implementation_guide/html/deans_dashboard_implementation_guide.html.target.db</targetsFilename>
-							<olinkBaseUri>deans_dashboard_implementation_guide.html</olinkBaseUri>
+							<targetsFilename>${docbook.target}/en/deans_dashboard_implementation_guide/html/index.html.target.db</targetsFilename>
+							<olinkBaseUri>index.html</olinkBaseUri>
 							<targetDatabaseDocument>olinkdb.xml</targetDatabaseDocument>	
 							<includes>deans_dashboard_implementation_guide.xml</includes>
 							<sourceDirectory>${docbook.source}/en/</sourceDirectory>
-							<targetDirectory>${docbook.target}/en/deans-dashboard-implementation-guide/html</targetDirectory>
+							<targetDirectory>${docbook.target}/en/deans_dashboard_implementation_guide/html</targetDirectory>
 							<postProcess>
-								<copy todir="${docbook.target}/en/deans-dashboard-implementation-guide/html/resources/images">
+								<copy todir="${docbook.target}/en/deans_dashboard_implementation_guide/html/resources/images">
 									<fileset dir="src/docbkx/en/resources/images">
 										<include name="**/*.png" />
 										<include name="**/*.PNG" />
@@ -194,7 +194,7 @@
 										<include name="**/*.svg" />
 									</fileset>
 								</copy>
-								<copy todir="${docbook.target}/en/deans-dashboard-implementation-guide/html/resources/css">
+								<copy todir="${docbook.target}/en/deans_dashboard_implementation_guide/html/resources/css">
 									<fileset dir="src/docbkx/en/resources/css">
 										<include name="**/*.css" />
 									</fileset>
@@ -220,7 +220,7 @@
 							<includes>deans_dashboard_implementation_guide.xml</includes>
 							<sourceDirectory>${docbook.source}/en/</sourceDirectory>
 							<postProcess>
-								<copy file="target/docbkx/html/deans_dashboard_implementation_guide.html" tofile="${docbook.target}/en/deans-dashboard-implementation-guide/html/deans_dashboard_implementation_guide_full.html" />
+								<copy file="target/docbkx/html/deans_dashboard_implementation_guide.html" tofile="${docbook.target}/en/deans_dashboard_implementation_guide/deans_dashboard_implementation_guide_full.html" />
 							</postProcess>
 						</configuration>
 					</execution>
@@ -240,7 +240,7 @@
 							<includes>deans_dashboard_implementation_guide.xml</includes>
 							<sourceDirectory>${docbook.source}/en/</sourceDirectory>
 							<postProcess>
-								<copy file="target/docbkx/pdf/deans_dashboard_implementation_guide.pdf" todir="${docbook.target}/en/" />
+								<copy file="target/docbkx/pdf/deans_dashboard_implementation_guide.pdf" todir="${docbook.target}/en/deans_dashboard_implementation_guide" />
 							</postProcess>
 						</configuration>
 					</execution>
@@ -259,7 +259,7 @@
 					    <includes>deans_dashboard_implementation_guide.xml</includes>
 					    <sourceDirectory>${docbook.source}/en/</sourceDirectory>
 					    <postProcess>
-					      <copy file="target/docbkx/rtf/deans_dashboard_implementation_guide.rtf" todir="${docbook.target}/en/deans-dashboard-implementation-guide" />
+					      <copy file="target/docbkx/rtf/deans_dashboard_implementation_guide.rtf" todir="${docbook.target}/en/deans_dashboard_implementation_guide" />
 					    </postProcess>
 					  </configuration>
 					</execution>
