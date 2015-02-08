@@ -4,10 +4,9 @@
 <book>
   <title>&title;</title>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources/bookinfo/bookinfo.xml" encoding="UTF-8"/>
-  <part label="Preface">
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="deans_dashboard_implementation_guide_preface.xml" encoding="UTF-8"/>
-  </part>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="deans_dashboard_implementation_guide_preface.xml" encoding="UTF-8"/>
   <part label="Volume I: What is the Dean's Dashboard?">
+    <title>What is the Dean’s Dashboard ?</title>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="deans_dashboard_implementation_guide_introduction.xml" encoding="UTF-8"/>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="deans_dashboard_implementation_guide_highlevel_intro.xml" encoding="UTF-8"/>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="deans_dashboard_implementation_guide_readiness.xml" encoding="UTF-8"/>
@@ -15,6 +14,7 @@
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="deans_dashboard_implementation_guide_step_by_step.xml" encoding="UTF-8"/>
   </part>
   <part label="Volume II: End User Guide">
+    <title>Volume II: End User Guide</title>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="deans_dashboard_implementation_guide_end_user_intro.xml" encoding="UTF-8"/>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_user_man_introduction.xml" encoding="UTF-8"/>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_user_man_getting_started.xml" encoding="UTF-8"/>
@@ -23,7 +23,8 @@
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_user_man_using_data_visualizer.xml" encoding="UTF-8"/>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_user_man_dashboard.xml" encoding="UTF-8"/>
   </part>
-  <part label="Volume III: Administrator's Guide">
+  <part label="Volume III: Administrator Guide">
+    <title>Volume III: Administrator Guide</title>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="deans_dashboard_implementation_guide_admin_intro.xml" encoding="UTF-8"/>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_user_man_orgunits.xml" encoding="UTF-8"/>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dhis2_user_man_data_elements.xml" encoding="UTF-8"/>

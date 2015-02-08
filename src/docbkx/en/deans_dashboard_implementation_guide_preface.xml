@@ -5,11 +5,12 @@
   <para>
     The Dean's Dashboard Implementation Guide was developed by the USAID Capacty<emphasis>Plus</emphasis>.
 
-    <para>    
-      <blockquote>
+    <blockquote>
+      <para>    
 	<ulink url="http://litlfred.github.io/DeansDashboardDocs">Dean's Dashboard</ulink>
-      </blockquote>
-    </para>
+      </para>
+
+    </blockquote>
 
     The Dean's Dashboard is an adpation of the use of the DHIS2 software in the Medical Education Sector.
     

@@ -2,5 +2,27 @@
 <!-- This document was created with Syntext Serna Free. --><!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "docbookV4.4/docbookx.dtd" []>
 <chapter>
   <title>Introduction to the End Users' Guide</title>
-
+  <section>
+    <title>Welcome!</title>
+    <para>
+      This guide is for you if you are going to be a primary user of the Dean's Dashboard.  Your responsibilities include one or more of the following:
+      <itemizedlist>
+	<listitem>
+	  <para>Entering data into the Dean's Dashboard </para>
+	</listitem>
+	<listitem>
+	  <para>Ensuring data is updated routinely </para>
+	</listitem>
+	<listitem>
+	  <para>Designing reports and Dashboard </para>
+	</listitem>
+	<listitem>
+	  <para>Performing analysis on the data </para>
+	</listitem>
+	<listitem>
+	  <para>Making decisions with the data </para>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
 </chapter>

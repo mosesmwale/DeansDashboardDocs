@@ -6,33 +6,36 @@
   <section>
 
     <title>Performance Areas</title>
+    <para>
     The primary use case of the Dean’s Dashboard is tool to monitor key school management performance areas by school leaders.  This should be achieved by supporting these main requirements:
     <itemizedlist mark='bullet'> 
-      <listitem>
+      <listitem><para>
 	The design of indicators to track school performance areas  
-      </listitem>
-      <listitem>
+      </para></listitem>
+      <listitem><para>
 	Visualization and trend analysis of the designed indicators
-      </listitem>
-      <listitem>
+      </para></listitem>
+      <listitem><para>
 	Data entry for the periodic numeric data used to calculate chosen indicators
-      </listitem>
+      </para></listitem>
     </itemizedlist>
-
+    </para>
+    <para>
     Secondary requirements include:
     <itemizedlist mark='bullet'> 
-      <listitem>
+      <listitem><para>
 	Limiting access to edit and view data based on user’s role and organizational affiliation within the school
-      </listitem>
-      <listitem>
+      </para></listitem>
+      <listitem><para>
 	Ability to monitor data entry statistics
-      </listitem>
-      <listitem>
+      </para></listitem>
+      <listitem><para>
 	Ability to import data from secondary systems or other devices (e.g. mobile phones)
-      </listitem>
-      <listitem>
+      </para></listitem>
+      <listitem><para>
       Ability to embed visuals into external applications or web pages
-      </listitem>
+      </para></listitem>
     </itemizedlist>
+    </para>
   </section>
 </chapter>

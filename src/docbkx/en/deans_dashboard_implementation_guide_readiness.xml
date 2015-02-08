@@ -20,42 +20,42 @@
 
     </para>
     <orderedlist numeration="arabic">
-      <listitem>
+      <listitem><para>
 	Have you clearly defined the need that is driving your institution to consider implementing the Dean’s Dashboard?
-	<blockquote>
+	<blockquote><para>
 	  An organization is more likely to be ready to undertake a Dean’s Dashboard initiative when it has objective information to support the need for improving specific areas. 
-	</blockquote>
-      </listitem>
-      <listitem>
+	</para></blockquote>
+      </para></listitem>
+      <listitem><para>
 	Who in your organization uses information to guide decision making and process improvement?
-	<blockquote>
+	<blockquote><para>
 	  Dean’s Dashboard is an information system that offers informational reports on a number of indicators important to your institution. Understanding than one individual or a team of persons using that information can affect how successful it can be for addressing your situation. 
-	</blockquote>
-      </listitem>
-      <listitem>
+	</para></blockquote>
+      </para></listitem>
+      <listitem><para>
 	Is now the right time for implementing an information tool such as the Dean’s Dashboard (i.e., it will not compete with other major changes currently being made at your institution)?
-	<blockquote>
+	<blockquote><para>
 	  If your organization is currently experiencing many changes, it may not be the ideal moment to begin implementing the Dean’s Dashboard initiative. Attempting to manage multiple change efforts at one time may degrade your institution's ability and employees' willingness to implement and sustain the Dean’s Dashboard effort. The program may be viewed as a distraction rather than a solution.
-	</blockquote>
-      </listitem>
-      <listitem>
+	</para></blockquote>
+      </para></listitem>
+      <listitem><para>
 	Will your institution's leaders support the effort required to implement and sustain the Dean’s Dashboard initiative?
-	<blockquote>
+	<blockquote><para>
 	  It is essential that the leaders of your institution actively support and champion Dean’s Dashboard. Leaders needs to understand the requirements of the program (e.g., identification of indicators in an iterative process spanning several weeks, technical preparation and training of system users, regular meetings to reinforce concepts and skills) and be willing to provide the personnel, time, and resources required to successfully implement and sustain the program. 
-	</blockquote>
-      </listitem>
-      <listitem>
+	</para></blockquote>
+      </para></listitem>
+      <listitem><para>
 	Will your institution provide sufficient staff with the necessary skills and time to support the development and implementation and use of the Dean’s Dashboard?
-	<blockquote>
+	<blockquote><para>
 	  It is important to find individuals with the right characteristics to serve as users to increase the success of the Dean’s Dashboard initiative. 
-	</blockquote>
-      </listitem>
-      <listitem>
+	</para></blockquote>
+      </para></listitem>
+      <listitem><para>
 	Will your institution allow time for personnel to attend training?
-	<blockquote>
+	<blockquote><para>
 	  While the Dean’s Dashboard will be designed by participating institutions, some direct staff training will be required. The full training element of the program includes up to XX hours of classroom learning; however, your institution may decide to train only one segment (e.g., a specific indicator or set of related indicators) that may require 1 hour. To preclude disruptions and scheduling problems and to maximize learning, participants should be excused from all duties while attending class.
-	</blockquote>
-      </listitem>
+	</para></blockquote>
+      </para></listitem>
     </orderedlist>
   </section>
 
@@ -63,27 +63,34 @@
     <title>Best practices in planning deployment/project management</title>
     <section>
       <title>stakeholder engagement</title>
+      <para/>
     </section>
     <section>
       <title>project management</title>
+      <para/>
     </section>
     <section>
       <title>defining scope</title>
+      <para/>
     </section>
   </section>
   <section>
     <title>Getting data:</title>
     <section>
       <title>What is on the dashboard?</title>
+      <para/>
     </section>
     <section>
       <title>Where does the data come from?</title>
+      <para/>
     </section>
     <section>
       <title>who has the data</title>
+      <para/>
     </section>
     <section>
       <title>what parts of the institution have the data</title>
+      <para/>
     </section>
   </section>
 </chapter>

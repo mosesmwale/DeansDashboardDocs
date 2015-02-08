@@ -2,4 +2,24 @@
 <!-- This document was created with Syntext Serna Free. --><!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "docbookV4.4/docbookx.dtd" []>
 <chapter>
   <title>Introduction to the Administrator's Guide</title>
+  <section>
+    <title>Welcome!</title>
+    <para>
+      This guide is for you if you are going to be responsible for maintaining the  Dean's Dashboard.  Your responsibilities include one or more of the following:
+      <itemizedlist>
+	<listitem>
+	  <para>Backing up data</para>
+	</listitem>
+	<listitem>
+	  <para>Restarting and upgrading the server </para>
+	</listitem>
+	<listitem>
+	  <para>Creating user accounts </para>
+	</listitem>
+	<listitem>
+	  <para>Linking data with other systems </para>
+	</listitem>
+      </itemizedlist>
+    </para>
+  </section>
 </chapter>
