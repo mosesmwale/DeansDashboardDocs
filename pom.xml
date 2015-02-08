@@ -47,7 +47,7 @@
 								<exec executable="git" outputproperty="revision" failifexecutionfails="false">
 									<arg line="rev-list --count HEAD"/>
 								</exec>
-								<echo file="${project.basedir}/src/docbkx/build.properties" message="&lt;?xml version=&apos;1.0&apos; encoding=&apos;UTF-8&apos;?&gt;&lt;revhistory&gt;&lt;revision&gt;&lt;revnumber&gt;Revision  ${revision}&lt;/revnumber&gt;&lt;revremark&gt;Version ${project.version} ${now}&lt;/revremark&gt;&lt;/revision&gt;&lt;/revhistory&gt;" />
+								<echo file="${project.basedir}/src/docbkx/build.properties" message="&lt;?xml version=&apos;1.0&apos; encoding=&apos;UTF-8&apos;?&gt;&lt;revhistory&gt;&lt;revision&gt;&lt;revnumber&gt;Revision  ${revision}&lt;/revnumber&gt;&lt;date&gt;${now}&lt;/date&gt;&lt;revremark&gt;Version ${project.version} ${now}&lt;/revremark&gt;&lt;/revision&gt;&lt;/revhistory&gt;" />
 							</tasks>
 						</configuration>
 						<goals>
@@ -71,21 +71,16 @@
 
 
 				  <execution>  
-  <!-- 
-
-  xmllint \-\-xinclude ${docbook.source}/en/deans_dashboard_implementation_guide.xml ${docbook.target}/deans_dashboard_implementation_guide/deans_dashboard_implementation_guide_full.xml  
-
-  -->
 				    <id>full-docbook</id>
 				    <phase>package</phase>  
 				    <configuration>
 				      <tasks name="combine">    
-					<mkdir dir="${docbook.target}/en/"/>
+					<mkdir dir="${docbook.target}/en/deans_dashboard_implementation_guide"/>
 					<exec  
 					    dir="${docbook.source}/en/"  
 					    executable="/usr/bin/xmllint"  
 					    failonerror="true">  
-					  <arg line="--xinclude deans_dashboard_implementation_guide.xml --output ${docbook.target}/en/deans_dashboard_implementation_guide_full.xml"/>  
+					  <arg line="--xinclude deans_dashboard_implementation_guide.xml --output ${docbook.target}/en/deans_dashboard_implementation_guide/deans_dashboard_implementation_guide_full.xml"/>  
 					</exec>  
 				      </tasks>  
 				    </configuration>  
@@ -96,20 +91,15 @@
 
 
 				  <execution> 
-<!--
-itstool deans_dashboard_implementation_guide_full.xml > deans_dashboard_implementation_guide_full.pot
--->
-
 				    <id>create-pot-for-translations</id>
 				    <phase>package</phase>  
 				    <configuration>
 				      <tasks name="combine">    
-					<mkdir dir="${docbook.target}/en/"/>
 					<exec  
 					    dir="${docbook.target}/en/"  
 					    executable="/usr/bin/itstool"  
 					    failonerror="true">  
-					  <arg line="${docbook.target}/en/deans_dashboard_implementation_guide_full.xml -o ${docbook.target}/en/deans_dashboard_implementation_guide_full.pot"/>  
+					  <arg line="deans_dashboard_implementation_guide_full.xml -o deans_dashboard_implementation_guide_full.pot"/>  
 					</exec>  
 				      </tasks>  
 				    </configuration>  
@@ -120,9 +110,6 @@ itstool deans_dashboard_implementation_guide_full.xml > deans_dashboard_implemen
 
 
 				  <execution> 
-<!-- 
-  docboo2odf ${docbook.target}/deans_dashboard_implementation_guide/deans_dashboard_implementation_guide_full.xml ${docbook.target}/deans_dashboard_implementation_guide/deans_dashboard_implementation_guide.odf
---> 
 				    <id>docbook-to-odf</id>
 				    <phase>package</phase>  
 				    <configuration>
@@ -133,6 +120,25 @@ itstool deans_dashboard_implementation_guide_full.xml > deans_dashboard_implemen
 					    executable="/usr/bin/docbook2odf"  
 					    failonerror="true">  
 					  <arg line="deans_dashboard_implementation_guide_full.xml "/>  
+					</exec>  
+				      </tasks>  
+				    </configuration>  
+				    <goals>  
+				      <goal>run </goal>  
+				    </goals>  
+				  </execution>  
+
+				  <execution> 
+				    <id>odf-to-word</id>
+				    <phase>package</phase>  
+				    <configuration>
+				      <tasks name="create-doc">    
+					<delete file="${docbook.target}/en/deans_dashboard_implementation_guide_full.doc"/>
+					<exec  
+					    dir="${docbook.target}/en/"  
+					    executable="/usr/bin/unoconv"  
+					    failonerror="true">  
+					  <arg line="-f doc deans_dashboard_implementation_guide_full.odt "/>  
 					</exec>  
 				      </tasks>  
 				    </configuration>  
@@ -234,7 +240,7 @@ itstool deans_dashboard_implementation_guide_full.xml > deans_dashboard_implemen
 							<includes>deans_dashboard_implementation_guide.xml</includes>
 							<sourceDirectory>${docbook.source}/en/</sourceDirectory>
 							<postProcess>
-								<copy file="target/docbkx/pdf/deans_dashboard_implementation_guide.pdf" todir="${docbook.target}/en/deans-dashboard-implementation-guide" />
+								<copy file="target/docbkx/pdf/deans_dashboard_implementation_guide.pdf" todir="${docbook.target}/en/" />
 							</postProcess>
 						</configuration>
 					</execution>
