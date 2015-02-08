@@ -29,9 +29,13 @@
 		<plugins>
 			<!--This section dynamically builds the build.properties which is replaced inside the document preface -->
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
+			<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-antrun-plugin</artifactId>
 				<executions>
+
+
+
+				  
 					<execution>
 						<id>revision</id>
 						<phase>package</phase>
@@ -64,6 +68,80 @@
 							<goal>run</goal>
 						</goals>
 					</execution>
+
+
+				  <execution>  
+  <!-- 
+
+  xmllint \-\-xinclude ${docbook.source}/en/deans_dashboard_implementation_guide.xml ${docbook.target}/deans_dashboard_implementation_guide/deans_dashboard_implementation_guide_full.xml  
+
+  -->
+				    <id>full-docbook</id>
+				    <phase>package</phase>  
+				    <configuration>
+				      <tasks name="combine">    
+					<mkdir dir="${docbook.target}/en/"/>
+					<exec  
+					    dir="${docbook.source}/en/"  
+					    executable="/usr/bin/xmllint"  
+					    failonerror="true">  
+					  <arg line="--xinclude deans_dashboard_implementation_guide.xml --output ${docbook.target}/en/deans_dashboard_implementation_guide_full.xml"/>  
+					</exec>  
+				      </tasks>  
+				    </configuration>  
+				    <goals>  
+				      <goal>run </goal>  
+				    </goals>  
+				  </execution>  
+
+
+				  <execution> 
+<!--
+itstool deans_dashboard_implementation_guide_full.xml > deans_dashboard_implementation_guide_full.pot
+-->
+
+				    <id>create-pot-for-translations</id>
+				    <phase>package</phase>  
+				    <configuration>
+				      <tasks name="combine">    
+					<mkdir dir="${docbook.target}/en/"/>
+					<exec  
+					    dir="${docbook.target}/en/"  
+					    executable="/usr/bin/itstool"  
+					    failonerror="true">  
+					  <arg line="${docbook.target}/en/deans_dashboard_implementation_guide_full.xml -o ${docbook.target}/en/deans_dashboard_implementation_guide_full.pot"/>  
+					</exec>  
+				      </tasks>  
+				    </configuration>  
+				    <goals>  
+				      <goal>run </goal>  
+				    </goals>  
+				  </execution>  
+
+
+				  <execution> 
+<!-- 
+  docboo2odf ${docbook.target}/deans_dashboard_implementation_guide/deans_dashboard_implementation_guide_full.xml ${docbook.target}/deans_dashboard_implementation_guide/deans_dashboard_implementation_guide.odf
+--> 
+				    <id>docbook-to-odf</id>
+				    <phase>package</phase>  
+				    <configuration>
+				      <tasks name="create-odf">    
+					<delete file="${docbook.target}/en/deans_dashboard_implementation_guide_full.odt"/>
+					<exec  
+					    dir="${docbook.target}/en/"  
+					    executable="/usr/bin/docbook2odf"  
+					    failonerror="true">  
+					  <arg line="deans_dashboard_implementation_guide_full.xml "/>  
+					</exec>  
+				      </tasks>  
+				    </configuration>  
+				    <goals>  
+				      <goal>run </goal>  
+				    </goals>  
+				  </execution>  
+
+
 				</executions>
 			</plugin>
 			<plugin>
@@ -85,7 +163,7 @@
 						</goals>
 						<configuration>
 							<sourceDirectory>${docbook.source}/en/</sourceDirectory>
-							<targetDirectory>${docbook.target}/en/user/html/</targetDirectory>
+							<targetDirectory>${docbook.target}/deans_dashboard_implementation_guide/html/</targetDirectory>
 							<admonGraphics>1</admonGraphics>
 							<admonGraphicsPath>resources/images/admon/</admonGraphicsPath>
 							<htmlStylesheet>resources/css/docbook_bsd.css</htmlStylesheet>
