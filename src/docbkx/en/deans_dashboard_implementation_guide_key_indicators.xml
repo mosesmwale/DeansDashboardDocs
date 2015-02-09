@@ -6,6 +6,23 @@
  
 
   <section>
+    <title>Overview</title>
+    <para>
+      The educational indicators to be tracked should be at a macro-level – dealing with program performance rather than of individual student/staff performance. The following key performance areas were identified to tracked on the Dean’s dashboard:
+      <orderedlist numeration="arabic">
+	<listitem><para>Student selection, admission and numbers</para></listitem>
+	<listitem><para>Student progression and achievement</para></listitem>
+	<listitem><para>Student development support and guidance</para></listitem>
+	<listitem><para>Teaching and learning</para></listitem>
+	<listitem><para>Research</para></listitem>
+	<listitem><para>Human Resources</para></listitem>
+	<listitem><para>Budgeting and fiscal management</para></listitem>
+	<listitem><para>Alumni (graduate tracking)</para></listitem>
+      </orderedlist>
+    </para>
+  </section>
+
+  <section>
     <title>Key use case(s)/indicators </title>
     <section>
       <title>HR</title>
