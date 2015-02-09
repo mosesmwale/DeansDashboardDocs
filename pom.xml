@@ -90,6 +90,26 @@
 				  </execution>  
 
 
+				  <execution>  
+				    <id>full-docbook</id>
+				    <phase>package</phase>  
+				    <configuration>
+				      <tasks name="combine">    
+					<mkdir dir="${docbook.target}/en/deans_dashboard_implementation_guide"/>
+					<exec  
+					    dir="${docbook.target}/en/deans_dashboard_implementation_guide"   
+					    executable="/usr/bin/xmllint"  
+					    failonerror="true">  
+					  <arg line=" --postvalid --noout --xinclude deans_dashboard_implementation_guide.xml">
+					</exec>  
+				      </tasks>  
+				    </configuration>  
+				    <goals>  
+				      <goal>run </goal>  
+				    </goals>  
+				  </execution>  
+
+
 				  <execution> 
 				    <id>create-pot-for-translations</id>
 				    <phase>package</phase>  
