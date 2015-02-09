@@ -62,8 +62,22 @@
   <section>
     <title>Best practices in planning deployment/project management</title>
     <section>
-      <title>stakeholder engagement</title>
-      <para/>
+      <title>Stakeholder Engagement</title>
+      <para>
+	A dashboard development committee can be composed of the following stakeholders:
+	<orderedlist numeration="arabic">
+	  <listitem><para>Director of the School of Medicine (Chair) </para></listitem>
+	  <listitem><para>Faculty Administrator      </para></listitem>
+	  <listitem><para>Coordinator of the Undergraduate training programs      </para></listitem>
+	  <listitem><para>Coordinator of the Registrar (Residency) training program       </para></listitem>
+	  <listitem><para>Faculty examination officer      </para></listitem>
+	  <listitem><para>Representative of the Nurse training program      </para></listitem>
+	  <listitem><para>Representative of the Allied Health training programs       </para></listitem>
+	  <listitem><para>Representative of the Academic Planning unit      </para></listitem>
+	  <listitem><para>Representative of the Institutional Finance Department      </para></listitem>
+	  <listitem><para>Representative of the Human Resource Department.      </para></listitem>
+	</orderedlist>
+      </para>
     </section>
     <section>
       <title>project management</title>
@@ -71,7 +85,9 @@
     </section>
     <section>
       <title>defining scope</title>
-      <para/>
+      <para>	
+	The dashboard development committee decides on which indicators for each of the identified key performance areas would be tracked, and how often these indicators would be monitored.
+      </para>
     </section>
   </section>
   <section>
