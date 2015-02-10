@@ -32,10 +32,6 @@
 			<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-antrun-plugin</artifactId>
 				<executions>
-
-
-
-				  
 					<execution>
 						<id>revision</id>
 						<phase>package</phase>
@@ -54,22 +50,6 @@
 							<goal>run</goal>
 						</goals>
 					</execution>
-					<execution>
-						<id>submodules</id>
-						<phase>package</phase>
-						<configuration>
-							<tasks>
-								<exec executable ="git" failifexecutionfails="true">
-									<arg line="submodule update --init --recursive"/>
-								</exec>
-							</tasks>
-						</configuration>
-						<goals>
-							<goal>run</goal>
-						</goals>
-					</execution>
-
-
 				  <execution>  
 				    <id>full-docbook</id>
 				    <phase>package</phase>  
@@ -79,7 +59,7 @@
 					<exec  
 					    dir="${docbook.source}/en/"  
 					    executable="/usr/bin/xmllint"  
-					    failonerror="true">  
+					    failifexecutionfails="false">  
 					  <arg line="--xinclude deans_dashboard_implementation_guide.xml --output ${docbook.target}/en/deans_dashboard_implementation_guide/deans_dashboard_implementation_guide_full.xml"/>  
 					</exec>  
 				      </tasks>  
@@ -88,19 +68,17 @@
 				      <goal>run </goal>  
 				    </goals>  
 				  </execution>  
-
-
 				  <execution>  
-				    <id>full-docbook</id>
+				    <id>validate-docbook</id>
 				    <phase>package</phase>  
 				    <configuration>
-				      <tasks name="combine">    
+				    <tasks name="combine">    
 					<mkdir dir="${docbook.target}/en/deans_dashboard_implementation_guide"/>
 					<exec  
 					    dir="${docbook.target}/en/deans_dashboard_implementation_guide"   
 					    executable="/usr/bin/xmllint"  
-					    failonerror="true">  
-					  <arg line=" --postvalid --noout --xinclude deans_dashboard_implementation_guide.xml">
+					    failifexecutionfails="false">  
+					  <arg line=" --postvalid --noout --xinclude deans_dashboard_implementation_guide.xml"/>
 					</exec>  
 				      </tasks>  
 				    </configuration>  
@@ -108,8 +86,6 @@
 				      <goal>run </goal>  
 				    </goals>  
 				  </execution>  
-
-
 				  <execution> 
 				    <id>create-pot-for-translations</id>
 				    <phase>package</phase>  
@@ -118,7 +94,7 @@
 					<exec  
 					    dir="${docbook.target}/en/deans_dashboard_implementation_guide"  
 					    executable="/usr/bin/itstool"  
-					    failonerror="true">  
+					    failifexecutionfails="false">  
 					  <arg line="deans_dashboard_implementation_guide_full.xml -o deans_dashboard_implementation_guide_full.pot"/>  
 					</exec>  
 				      </tasks>  
@@ -127,8 +103,6 @@
 				      <goal>run </goal>  
 				    </goals>  
 				  </execution>  
-
-
 				  <execution> 
 				    <id>docbook-to-odf</id>
 				    <phase>package</phase>  
@@ -138,7 +112,7 @@
 					<exec  
 					    dir="${docbook.target}/en/deans_dashboard_implementation_guide"  
 					    executable="/usr/bin/docbook2odf"  
-					    failonerror="true">  
+					    failifexecutionfails="false">  
 					  <arg line="deans_dashboard_implementation_guide_full.xml "/>  
 					</exec>  
 				      </tasks>  
@@ -157,7 +131,7 @@
 					<exec  
 					    dir="${docbook.target}/en/deans_dashboard_implementation_guide"  
 					    executable="/usr/bin/unoconv"  
-					    failonerror="true">  
+					    failifexecutionfails="false">  
 					  <arg line="-f doc deans_dashboard_implementation_guide_full.odt "/>  
 					</exec>  
 				      </tasks>  
@@ -166,8 +140,6 @@
 				      <goal>run </goal>  
 				    </goals>  
 				  </execution>  
-
-
 				</executions>
 			</plugin>
 			<plugin>
@@ -196,11 +168,7 @@
 							<glossaryCollection>resources/glossary_en.xml</glossaryCollection>
 							<sectionautolabel>1</sectionautolabel>
 							<sectionlabelincludescomponentlabel>1</sectionlabelincludescomponentlabel>
-							<chunkedOutput>true</chunkedOutput>
-							<collectXrefTargets>yes</collectXrefTargets> 
-							<targetsFilename>${docbook.target}/en/deans_dashboard_implementation_guide/html/index.html.target.db</targetsFilename>
-							<olinkBaseUri>index.html</olinkBaseUri>
-							<targetDatabaseDocument>olinkdb.xml</targetDatabaseDocument>	
+							<chunkedOutput>true</chunkedOutput>	
 							<includes>deans_dashboard_implementation_guide.xml</includes>
 							<sourceDirectory>${docbook.source}/en/</sourceDirectory>
 							<targetDirectory>${docbook.target}/en/deans_dashboard_implementation_guide/html</targetDirectory>
@@ -284,7 +252,6 @@
 					  </configuration>
 					</execution>
 -->
-
 				</executions>
 				<dependencies>
 					<dependency>
