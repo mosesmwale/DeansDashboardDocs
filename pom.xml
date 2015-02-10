@@ -232,26 +232,6 @@
 							</postProcess>
 						</configuration>
 					</execution>
-
-					<!-- RTF User docs-->
-<!--
-					<execution>
-					  <id>rtf-docs-deans-dashboard-implementation-guide</id>
-					  <phase>package</phase>
-					  <goals>
-					    <goal>generate-rtf</goal>
-					  </goals>
-					  <configuration>
-					    <argLine>-Xmx1024m</argLine>
-					    <doubleSided>1</doubleSided>
-					    <includes>deans_dashboard_implementation_guide.xml</includes>
-					    <sourceDirectory>${docbook.source}/en/</sourceDirectory>
-					    <postProcess>
-					      <copy file="target/docbkx/rtf/deans_dashboard_implementation_guide.rtf" todir="${docbook.target}/en/deans_dashboard_implementation_guide" />
-					    </postProcess>
-					  </configuration>
-					</execution>
--->
 				</executions>
 				<dependencies>
 					<dependency>
@@ -262,6 +242,41 @@
 					</dependency>
 				</dependencies>
 			</plugin>
+			      <plugin>
+        <groupId>com.agilejava.docbkx</groupId>
+        <artifactId>docbkx-maven-plugin</artifactId>
+        <version>2.0.14</version>
+        <configuration>
+          <xincludeSupported>true</xincludeSupported>
+        </configuration>
+        <executions>  
+		  <execution>
+            <id>rtf-docs</id>
+            <phase>package</phase>
+            <goals>
+              <goal>generate-rtf</goal>
+            </goals>
+            <configuration>
+              <argLine>-Xmx1024m</argLine>
+              <foCustomization>${docbook.source}/en/resources/xsl/fop-cust.xsl</foCustomization>
+              <doubleSided>1</doubleSided>
+              <includes>deans_dashboard_implementation_guide.xml</includes>
+              <sourceDirectory>${docbook.source}/en/</sourceDirectory>
+              <postProcess>
+                <copy file="target/docbkx/rtf/deans_dashboard_implementation_guide.rtf" todir="${docbook.target}/en/deans_dashboard_implementation_guide" />
+              </postProcess>
+            </configuration>
+          </execution>
+		</executions>
+        <dependencies>
+          <dependency>
+            <groupId>org.docbook</groupId>
+            <artifactId>docbook-xml</artifactId>
+            <version>4.4</version>
+            <scope>runtime</scope>
+          </dependency>
+        </dependencies>
+      </plugin>
 			<plugin>
 				<groupId>com.agilejava.docbkx</groupId>
 				<artifactId>docbkx-fop-support</artifactId>
