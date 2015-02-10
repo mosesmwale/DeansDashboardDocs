@@ -6,7 +6,7 @@
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources/bookinfo/bookinfo.xml" encoding="UTF-8"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="deans_dashboard_implementation_guide_preface.xml" encoding="UTF-8"/>
   <part label="Volume I: What is the Dean's Dashboard?">
-    <title>What is the Dean’s Dashboard ?</title>
+    <title>What is the Dean&apos;s Dashboard ?</title>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="deans_dashboard_implementation_guide_introduction.xml" encoding="UTF-8"/>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="deans_dashboard_implementation_guide_highlevel_intro.xml" encoding="UTF-8"/>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="deans_dashboard_implementation_guide_readiness.xml" encoding="UTF-8"/>
