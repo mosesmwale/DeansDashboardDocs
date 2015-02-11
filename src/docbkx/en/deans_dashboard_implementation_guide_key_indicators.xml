@@ -22,11 +22,71 @@
     </para>
   </section>
 
+
+
   <section>
-    <title>Key use case(s)/indicators </title>
+    <title>Example Key Indicators</title>
     <section>
-      <title>HR</title>
-      <para/>
+      <title>Student selection and admissions</title>
+      <para>
+	<orderedlist numeration="arabic">
+	  <listitem><para>Number of applicants by gender, race and province</para></listitem>
+	  <listitem><para>Number of students admitted by gender, province, economic class, and rurality</para></listitem>
+	  <listitem><para>Number of students self-fee paying, on scholarship, on loans, and unable to pay fees.</para></listitem>
+	</orderedlist>
+      </para>
+    </section>
+    <section>
+      <title>Student progression and achievements</title>
+      <para>
+	<orderedlist numeration="arabic">
+	  <listitem><para>Numbers of students graduating from the programs each year</para></listitem>
+	  <listitem><para>Student throughput rates</para></listitem>
+	  <listitem><para>Student graduation rates</para></listitem>
+	  <listitem><para>Student attrition rates</para></listitem>
+	</orderedlist>
+
+      </para>
+    </section>
+    <section>
+      <title>Human Resources</title>
+      <para>
+	<orderedlist numeration="arabic">
+	  <listitem><para>Established posts and vacancy rates for academics and support staff</para></listitem>
+	  <listitem><para>Academic staff by rank, highest academic qualification, age, gender race, and nationality</para></listitem>
+	</orderedlist>
+      </para>
+    </section>
+    <section>
+      <title>Teaching and Learning</title>
+      <para>
+	<orderedlist numeration="arabic">
+	  <listitem><para>Established posts and vacancy rates for academics and support staff</para></listitem>
+	  <listitem><para>Academic staff by rank, highest academic qualification, age, gender race, and nationality</para></listitem>
+	</orderedlist>
+      </para>
+    </section>
+
+    <section>
+      <title>Teaching and Learning</title>
+      <para>
+	<orderedlist numeration="arabic">
+	  <listitem><para>Workload in in FTEs (Full Time Equivalents)  and in hours per staff member per program</para></listitem>
+	  <listitem><para>Utilization levels of lecture theatres, class laboratories, tutorial rooms, and community hospitals</para></listitem>
+	</orderedlist>
+      </para>
+    </section>
+
+    <section>
+      <title>Research</title>
+      <para>
+	<orderedlist numeration="arabic">
+	  <listitem><para>Number of research applications submitted to IRB and numbers approved and rejected</para></listitem>
+	  <listitem><para>Number of grants application and numbers of successful and unsuccessful applications</para></listitem>
+	  <listitem><para>Number of papers published in peer reviewed journals – proportion where faculty was the lead author</para></listitem>
+	  <listitem><para>Numbers of Masters and Doctorate students graduating</para></listitem>
+	</orderedlist>
+      </para>
     </section>
     <section>
       <title>Finance</title>
