@@ -1,6 +1,6 @@
 <html><head>
       <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-   <title>Chapter&nbsp;24.&nbsp;Import and export</title><link rel="stylesheet" type="text/css" href="resources/css/docbook_bsd.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><meta name="keywords" content="DHIS2, HMIS, aggregate data, Health Management Information System, Integrated data repository, Health Information System"><link rel="home" href="deans_dashboard_implementation_guide.html" title="Deans Dashboard Implementation Guide"><link rel="up" href="pt03.html" title="Part&nbsp;Volume III: Administrator Guide.&nbsp;Volume III: Administrator Guide"><link rel="prev" href="ch23s05.html" title="Approving by category option group set"><link rel="next" href="ch24s02.html" title="Importing data"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;24.&nbsp;Import and export</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch23s05.html">Prev</a>&nbsp;</td><th width="60%" align="center">Part&nbsp;Volume III: Administrator Guide.&nbsp;Volume III: Administrator Guide</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch24s02.html">Next</a></td></tr></table><hr></div><div class="chapter"><div class="titlepage"><div><div><h2 class="title"><a name="d5e2347"></a>Chapter&nbsp;24.&nbsp;Import and export</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="ch24.html#d5e2356">Meta-data import</a></span></dt><dd><dl><dt><span class="section"><a href="ch24.html#d5e2358">XML Meta-data import</a></span></dt><dt><span class="section"><a href="ch24.html#d5e2397">Importing CSV meta-data</a></span></dt><dt><span class="section"><a href="ch24.html#d5e2760">GML data import</a></span></dt></dl></dd><dt><span class="section"><a href="ch24s02.html">Importing data</a></span></dt><dd><dl><dt><span class="section"><a href="ch24s02.html#import_another_instance">XML data import</a></span></dt><dt><span class="section"><a href="ch24s02.html#importCSVdata">Importing CSV data</a></span></dt><dt><span class="section"><a href="ch24s02.html#d5e2830">Event data import</a></span></dt><dt><span class="section"><a href="ch24s02.html#importPDFdata">Importing PDF data</a></span></dt><dt><span class="section"><a href="ch24s02.html#dhis14import">Importing data from DHIS 1.4</a></span></dt></dl></dd><dt><span class="section"><a href="ch24s03.html">Exporting data and meta-data</a></span></dt><dd><dl><dt><span class="section"><a href="ch24s03.html#d5e2910">Metadata export</a></span></dt><dt><span class="section"><a href="ch24s03.html#d5e2919">Meta-data detailed export</a></span></dt><dt><span class="section"><a href="ch24s03.html#d5e2938">Data export</a></span></dt><dt><span class="section"><a href="ch24s03.html#d5e2946">Event data export</a></span></dt><dt><span class="section"><a href="ch24s03.html#d5e2958">Exporting data to other systems</a></span></dt></dl></dd></dl></div>
+   <title>Chapter&nbsp;24.&nbsp;Import and export</title><link rel="stylesheet" type="text/css" href="resources/css/docbook_bsd.css"><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"><meta name="keywords" content="DHIS2, HMIS, aggregate data, Health Management Information System, Integrated data repository, Health Information System"><link rel="home" href="deans_dashboard_implementation_guide.html" title="Deans Dashboard Implementation Guide"><link rel="up" href="pt03.html" title="Part&nbsp;Volume III: Administrator Guide.&nbsp;Volume III: Administrator Guide"><link rel="prev" href="ch23s05.html" title="Approving by category option group set"><link rel="next" href="ch24s02.html" title="Importing data"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;24.&nbsp;Import and export</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch23s05.html">Prev</a>&nbsp;</td><th width="60%" align="center">Part&nbsp;Volume III: Administrator Guide.&nbsp;Volume III: Administrator Guide</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch24s02.html">Next</a></td></tr></table><hr></div><div class="chapter" title="Chapter&nbsp;24.&nbsp;Import and export"><div class="titlepage"><div><div><h2 class="title"><a name="d5e2347"></a>Chapter&nbsp;24.&nbsp;Import and export</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="ch24.html#d5e2356">Meta-data import</a></span></dt><dd><dl><dt><span class="section"><a href="ch24.html#d5e2358">XML Meta-data import</a></span></dt><dt><span class="section"><a href="ch24.html#d5e2397">Importing CSV meta-data</a></span></dt><dt><span class="section"><a href="ch24.html#d5e2760">GML data import</a></span></dt></dl></dd><dt><span class="section"><a href="ch24s02.html">Importing data</a></span></dt><dd><dl><dt><span class="section"><a href="ch24s02.html#import_another_instance">XML data import</a></span></dt><dt><span class="section"><a href="ch24s02.html#importCSVdata">Importing CSV data</a></span></dt><dt><span class="section"><a href="ch24s02.html#d5e2830">Event data import</a></span></dt><dt><span class="section"><a href="ch24s02.html#importPDFdata">Importing PDF data</a></span></dt><dt><span class="section"><a href="ch24s02.html#dhis14import">Importing data from DHIS 1.4</a></span></dt></dl></dd><dt><span class="section"><a href="ch24s03.html">Exporting data and meta-data</a></span></dt><dd><dl><dt><span class="section"><a href="ch24s03.html#d5e2910">Metadata export</a></span></dt><dt><span class="section"><a href="ch24s03.html#d5e2919">Meta-data detailed export</a></span></dt><dt><span class="section"><a href="ch24s03.html#d5e2938">Data export</a></span></dt><dt><span class="section"><a href="ch24s03.html#d5e2946">Event data export</a></span></dt><dt><span class="section"><a href="ch24s03.html#d5e2958">Exporting data to other systems</a></span></dt></dl></dd></dl></div>
   
   <p>In a primary health system, the HMIS typically involves a distributed application, where the
     same application is running in different geographical locations (PHCs,CHCs, hospitals,
@@ -16,19 +16,19 @@
     fulfill these needs. </p>
   <p>To access the main Import-Export module, choose <span class="guimenu">Services-&gt;Import-Export. </span>A number of services are available, all of which will be described in detail in respective sections below. </p>
   <div class="screenshot">
-    <div class="mediaobject" align="center"><table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0; cellspacing: 0;" width="80%"><tr><td align="center"><img src="resources/images/import_export/import_export_overview.png" align="middle" width="100%"></td></tr></table></div>
+    <div class="mediaobject" align="center"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="80%"><tr><td align="center"><img src="resources/images/import_export/import_export_overview.png" align="middle" width="100%"></td></tr></table></div>
   </div>
-  <div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d5e2356"></a>Meta-data import</h2></div></div></div>
+  <div class="section" title="Meta-data import"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d5e2356"></a>Meta-data import</h2></div></div></div>
     
-    <div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d5e2358"></a>XML Meta-data import</h3></div></div></div>
+    <div class="section" title="XML Meta-data import"><div class="titlepage"><div><div><h3 class="title"><a name="d5e2358"></a>XML Meta-data import</h3></div></div></div>
       
       <p>Meta-data in the XML format known as DXF2 can be easily imported by accessing Services-&gt;Import-Export-&gt;Meta-Data import. Select the XML file by pressing "Select" and choose the file from your local file system. Both raw XML as well as a ZIP archive of the XML are supported.  </p>
       <div class="screenshot">
         
-        <div class="mediaobject" align="center"><table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0; cellspacing: 0;" width="80%"><tr><td align="center"><img src="resources/images/import_export/import_default.png" align="middle" width="100%"></td></tr></table></div>
+        <div class="mediaobject" align="center"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="80%"><tr><td align="center"><img src="resources/images/import_export/import_default.png" align="middle" width="100%"></td></tr></table></div>
       </div>
       <p>There are two separate options for importing data. </p>
-      <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
+      <div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
           <p>Dry run: This is similar to the old preview option, this will do a dry run import,
             and give you information about any errors.</p>
         </li><li class="listitem">
@@ -38,27 +38,27 @@
             empty database. Updates only will only allow the meta-data to match meta-data that is
             already there (same identifiers, new name etc).</p>
         </li></ul></div>
-      <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="resources/images/admon/note.png"></td><th align="left">Note</th></tr><tr><td align="left" valign="top">
+      <div class="note" title="Note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="resources/images/admon/note.png"></td><th align="left">Note</th></tr><tr><td align="left" valign="top">
         <p><span class="bold"><strong>It is highly recommend always using the Dry run option</strong></span> when importing data to make sure you keep control over any changes
             to your meta-data and databases being out of synch on data elements or orgunit
             names</p>
       </td></tr></table></div>
-      <div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d5e2375"></a>Dry run before importing</h4></div></div></div>
+      <div class="section" title="Dry run before importing"><div class="titlepage"><div><div><h4 class="title"><a name="d5e2375"></a>Dry run before importing</h4></div></div></div>
         
         <p>Before doing the import into your database, it is highly recommended that you run the
           import with the dry run option set to true first. This will enabled you to have a look at
           how many new, updates, and ignored meta-data there will be. After you have selected your
           file, set dry run to true, you can now click the import button. After doing this, you will
           be greeted by this window.</p>
-        <div class="mediaobject" align="center"><table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0; cellspacing: 0;" width="80%"><tr><td align="center"><img src="resources/images/import_export/display_import_summary.png" align="middle" width="100%"></td></tr></table></div>
+        <div class="mediaobject" align="center"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="80%"><tr><td align="center"><img src="resources/images/import_export/display_import_summary.png" align="middle" width="100%"></td></tr></table></div>
         <p>Here you can see a short summary of what was contained in your import file. To see
           further details, please click on the "display import summary" link.</p>
-        <div class="mediaobject" align="center"><table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0; cellspacing: 0;" width="80%"><tr><td align="center"><img src="resources/images/import_export/import_summary.png" align="middle" width="100%"></td></tr></table></div>
+        <div class="mediaobject" align="center"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="80%"><tr><td align="center"><img src="resources/images/import_export/import_summary.png" align="middle" width="100%"></td></tr></table></div>
         <p>Here you can see that the import dry run was successful and the import contained
             <span class="bold"><strong>1</strong></span> new organisation unit, <span class="bold"><strong>1332</strong></span> updated, and <span class="bold"><strong>4</strong></span> organisation unit
           levels.</p>
         <p>Below you can see another example.</p>
-        <div class="mediaobject" align="center"><table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0; cellspacing: 0;" width="80%"><tr><td align="center"><img src="resources/images/import_export/import_summary_conflicts.png" align="middle" width="100%"></td></tr></table></div>
+        <div class="mediaobject" align="center"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="80%"><tr><td align="center"><img src="resources/images/import_export/import_summary_conflicts.png" align="middle" width="100%"></td></tr></table></div>
         <p>Here you can see that the organisation unit Nduvuibu MCHP had a unknown reference to
           an object with ID "aaaU6Kr7Gtpidn", which means that an object with this ID was not
           present in your imported file, and it could not be found in the existing database. Its
@@ -66,7 +66,7 @@
           imported, but you might have to fix this directly in DHIS 2 later, if the reference should
           have pointed to something else.</p>
       </div>
-      <div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d5e2394"></a>Matching identifiers in DXF2</h4></div></div></div>
+      <div class="section" title="Matching identifiers in DXF2"><div class="titlepage"><div><div><h4 class="title"><a name="d5e2394"></a>Matching identifiers in DXF2</h4></div></div></div>
         
         <p>The DXF2 format currently support matching for two identifiers, the internal DHIS2 identifier (known as a UID), and also using an  external identifier called called a "code". When the importer is trying to search for
         references (like the one above), it will first go to the UID field, and then to the code
@@ -78,7 +78,7 @@
         systems.</p>
       </div>
     </div>
-    <div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d5e2397"></a>Importing CSV meta-data</h3></div></div></div>
+    <div class="section" title="Importing CSV meta-data"><div class="titlepage"><div><div><h3 class="title"><a name="d5e2397"></a>Importing CSV meta-data</h3></div></div></div>
       
       <p>DHIS 2 supports import of meta-data in the CSV format. Columns which are not required
         can be omitted in the CSV file, but the order will be affected. If you would like to specify
@@ -88,7 +88,7 @@
         the left side menu. You must select the object type which your CSV file contains. You can
         only upload one type of objects at the time. Upload your file and click update. The
         following object types are supported:</p>
-      <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
+      <div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
           <p>Data elements</p>
         </li><li class="listitem">
           <p>Data element groups</p>
@@ -146,13 +146,13 @@
 "Gender",,,"Female"
 "Gender",,,"Male"</pre>
     </div>
-    <div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d5e2760"></a>GML data import</h3></div></div></div>
+    <div class="section" title="GML data import"><div class="titlepage"><div><div><h3 class="title"><a name="d5e2760"></a>GML data import</h3></div></div></div>
       
       <p>The GML import function can be used to import data prepared in the Geography Markup Language (GML). GML can be used to update the coordinates (both polygons and points). Once you have prepared your GML file as detailed in the chapter on "Importing coordinates", you can load the file with this function. </p>
       <p>It is currently not possible to import an organisation unit hierarchy with GML.
         Therefore, you should create the organisation unit hierarchy separately, and then use GML to
         update the coordinates once the hierarchy has been created. </p>
-      <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="resources/images/admon/note.png"></td><th align="left">Note</th></tr><tr><td align="left" valign="top">
+      <div class="note" title="Note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="resources/images/admon/note.png"></td><th align="left">Note</th></tr><tr><td align="left" valign="top">
         <p>Currently, it is only possible to import GML data by matching on the name of the
           organisation unit itself. Therefore, if you have organisation units with the same name in
           your organisation unit hierarchy (e.g. two clinics with exactly the same name), you will

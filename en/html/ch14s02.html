@@ -1,18 +1,18 @@
 <html><head>
       <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-   <title>Organisation unit maintenance</title><link rel="stylesheet" type="text/css" href="resources/css/docbook_bsd.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><meta name="keywords" content="DHIS2, HMIS, aggregate data, Health Management Information System, Integrated data repository, Health Information System"><link rel="home" href="deans_dashboard_implementation_guide.html" title="Deans Dashboard Implementation Guide"><link rel="up" href="ch14.html" title="Chapter&nbsp;14.&nbsp;Organisation units"><link rel="prev" href="ch14.html" title="Chapter&nbsp;14.&nbsp;Organisation units"><link rel="next" href="ch15.html" title="Chapter&nbsp;15.&nbsp;Data elements"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Organisation unit maintenance</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch14.html">Prev</a>&nbsp;</td><th width="60%" align="center">Chapter&nbsp;14.&nbsp;Organisation units</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch15.html">Next</a></td></tr></table><hr></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d5e928"></a>Organisation unit maintenance</h2></div></div></div>
+   <title>Organisation unit maintenance</title><link rel="stylesheet" type="text/css" href="resources/css/docbook_bsd.css"><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"><meta name="keywords" content="DHIS2, HMIS, aggregate data, Health Management Information System, Integrated data repository, Health Information System"><link rel="home" href="deans_dashboard_implementation_guide.html" title="Deans Dashboard Implementation Guide"><link rel="up" href="ch14.html" title="Chapter&nbsp;14.&nbsp;Organisation units"><link rel="prev" href="ch14.html" title="Chapter&nbsp;14.&nbsp;Organisation units"><link rel="next" href="ch15.html" title="Chapter&nbsp;15.&nbsp;Data elements"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Organisation unit maintenance</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch14.html">Prev</a>&nbsp;</td><th width="60%" align="center">Chapter&nbsp;14.&nbsp;Organisation units</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch15.html">Next</a></td></tr></table><hr></div><div class="section" title="Organisation unit maintenance"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d5e928"></a>Organisation unit maintenance</h2></div></div></div>
     
-    <div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="orgunit"></a>Organisation units</h3></div></div></div>
+    <div class="section" title="Organisation units"><div class="titlepage"><div><div><h3 class="title"><a name="orgunit"></a>Organisation units</h3></div></div></div>
       
       <p>This is where you can create organisation units (from now on referred to as orgunits) and build up the orgunit hierarchy. Orgunits are added one by one as either root unit or a child of a selected unit. The left side menu represents the current organisational hierarchy and if you select a unit there you will see its children listed in the main list of orgunits in the middle of the screen. When an orgunit is selected in the left side menu you can also add new child units to it. To locate an orgunit in the hierarchy you can either navigate through the tree by expanding the branches (click on the + symbol), or search for it by opening the search field (click the green symbol above the root of the hierarchy). In search you can either search for the orgunit name or its code, both will only show exact matches (case-insensitive). To add a new orgunit first select its parent and then click on the Add new button in the top right corner of the list of orgunits. To add a new root orgunit make sure no orgunit is selected in the menu and click on "Add new". The details of adding a new orgunit are explained in <a class="xref" href="ch14s02.html#editOrganisationalUnits">the section called &#8220;Editing organisation units&#8221;</a>. </p>
-      <div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="ou_edit"></a>Editing organisation units</h4></div></div></div>
+      <div class="section" title="Editing organisation units"><div class="titlepage"><div><div><h4 class="title"><a name="ou_edit"></a>Editing organisation units</h4></div></div></div>
         
         <p>To edit the properties of an existing orgunit first select its parent (if any) in the left side menu, then locate the orgunit in the listed orgunits, and  click on  the  name of the orgunit that you want to modify. A context menu will appear, and you should select "Edit". Refer to the screen-shot below to see how it works. </p>
         <div class="screenshot">
-          <div class="mediaobject" align="center"><table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0; cellspacing: 0;" width="50%"><tr><td align="center"><img src="resources/images/orgunits/editing_orgunits.png" align="middle" width="100%"></td></tr></table></div>
+          <div class="mediaobject" align="center"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="50%"><tr><td align="center"><img src="resources/images/orgunits/editing_orgunits.png" align="middle" width="100%"></td></tr></table></div>
         </div>
         <p>   The following properties can be defined in the Edit (or Create new) window:</p>
-        <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
+        <div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
             <p>Name: Define the precise name of the orgunit in this field. Each orgunit must have a unique name. </p>
           </li><li class="listitem">
             <p>Short name: Typically, an abbreviation of the full name. This attribute is often used in reports to display the name of the orgunit, where there is limited space available. </p>
@@ -40,7 +40,7 @@
         <p>In addition to all of the options listed above, if you have added any attributes to organisation units, your custom attributes may also appear there. Please refer to the section on "Attributes" for more information about how attributes can be used.</p>
       </div>
     </div>
-    <div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="ou_groupsets"></a>Organisation unit group sets</h3></div></div></div>
+    <div class="section" title="Organisation unit group sets"><div class="titlepage"><div><div><h3 class="title"><a name="ou_groupsets"></a>Organisation unit group sets</h3></div></div></div>
       
       <p>Group sets can be understood as a flexible tool to add more categorisation to orgunits. Any number of group sets can be added, but as a default start all databases will have the two group sets "Type" and "Ownership". Using these  group sets will simplify how reporting is done, and facilitate analysis through the use of tools such as Excel PivotTables.</p>
       <p>While a group set like "Type" describes a measure dimension, the actual
@@ -66,10 +66,10 @@
             organisation unit at a time however.</p>
         </li></ol></div>
       <p>It is important to keep in mind when using the "Organisational unit group" set function, that unless great care is taken, organisational units can be assigned to multiple groups of a group set. This can be checked through the "Data Integrity" module, which will report which organisational units are not members of a compulsory organisational unit group set, and which organisational units have been assigned to more than one member of a group set. </p>
-      <div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="ou_groupsets_edit"></a>Editing organisation unit group sets</h4></div></div></div>
+      <div class="section" title="Editing organisation unit group sets"><div class="titlepage"><div><div><h4 class="title"><a name="ou_groupsets_edit"></a>Editing organisation unit group sets</h4></div></div></div>
         
         <p>Click on the name of the organisation unit group set you wish to modify, followed by "Edit" from the context menu which will appear.  The following properties can be defined in the Edit (or Create new) window:</p>
-        <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
+        <div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
             <p>Name: Provide a precise name for the group set.</p>
           </li><li class="listitem">
             <p>Description: Describe the phenomena the group set is measuring/capturing.</p>
@@ -80,13 +80,13 @@
           </li></ul></div>
       </div>
     </div>
-    <div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="ou_groups"></a>Organisation unit groups</h3></div></div></div>
+    <div class="section" title="Organisation unit groups"><div class="titlepage"><div><div><h3 class="title"><a name="ou_groups"></a>Organisation unit groups</h3></div></div></div>
       
       <p>This function will allow you to  add new and manage existing organisation groups and their memberships. It can be accessed by choosing Maintenance-&gt;Organisation units-&gt;Organisation Unit group from the main menu. To add a new orgunit group click on the "Add new" button in the top right corner of the list of  groups. </p>
-      <div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="ou_groups_edit"></a>Editing organisation unit groups</h4></div></div></div>
+      <div class="section" title="Editing organisation unit groups"><div class="titlepage"><div><div><h4 class="title"><a name="ou_groups_edit"></a>Editing organisation unit groups</h4></div></div></div>
         
         <p>Click on   name of the orgunit group that you want to modify and then select "Edit" from the context menu which will appear.  The following properties can be defined in the Edit (or Create new) window:</p>
-        <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
+        <div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
             <p>Name: Provide a precise,unique and descriptive name for the orgunit group.</p>
           </li><li class="listitem">
             <p>Short name: This name should be less than 25 characters, and will be used in certain places in DHIS2 when the number of characters needs to be restricted due to space constraints.</p>
@@ -99,11 +99,11 @@
           </li></ul></div>
       </div>
     </div>
-    <div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="ou_level"></a>Organisation unit level</h3></div></div></div>
+    <div class="section" title="Organisation unit level"><div class="titlepage"><div><div><h3 class="title"><a name="ou_level"></a>Organisation unit level</h3></div></div></div>
       
       <p>Here you specify a contextual name for each level in the hierarchy, e.g. "Country", "Province", "District", "Health Facility", and these names will be used all over the application where levels are referred to. This page will take some time to load if the orgunit hierarchy is very big.</p>
     </div>
-    <div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="hierarchy_operations"></a>Hierarchy operations</h3></div></div></div>
+    <div class="section" title="Hierarchy operations"><div class="titlepage"><div><div><h3 class="title"><a name="hierarchy_operations"></a>Hierarchy operations</h3></div></div></div>
       
       <p>Here you can move orgunits around in the hierarchy by changing the parent of a selected orgunit. This process is done in three steps:</p>
       <p>1. Select the orgunit you want to move (in the hierarchy in the left side menu) and click "Confirm" under the "Select an organisation unit to move" label.</p>

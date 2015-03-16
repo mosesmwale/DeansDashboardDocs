@@ -1,8 +1,8 @@
 <html><head>
       <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-   <title>Chapter&nbsp;16.&nbsp;Data sets and data entry forms</title><link rel="stylesheet" type="text/css" href="resources/css/docbook_bsd.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><meta name="keywords" content="DHIS2, HMIS, aggregate data, Health Management Information System, Integrated data repository, Health Information System"><link rel="home" href="deans_dashboard_implementation_guide.html" title="Deans Dashboard Implementation Guide"><link rel="up" href="pt03.html" title="Part&nbsp;Volume III: Administrator Guide.&nbsp;Volume III: Administrator Guide"><link rel="prev" href="ch15.html" title="Chapter&nbsp;15.&nbsp;Data elements"><link rel="next" href="ch16s02.html" title="Data Entry Forms"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;16.&nbsp;Data sets and data entry forms</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch15.html">Prev</a>&nbsp;</td><th width="60%" align="center">Part&nbsp;Volume III: Administrator Guide.&nbsp;Volume III: Administrator Guide</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch16s02.html">Next</a></td></tr></table><hr></div><div class="chapter"><div class="titlepage"><div><div><h2 class="title"><a name="d5e1297"></a>Chapter&nbsp;16.&nbsp;Data sets and data entry forms</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="ch16.html#datasets">Data sets</a></span></dt><dd><dl><dt><span class="section"><a href="ch16.html#dataSet">Data set management</a></span></dt><dt><span class="section"><a href="ch16.html#d5e1359">Data set categories</a></span></dt></dl></dd><dt><span class="section"><a href="ch16s02.html">Data Entry Forms</a></span></dt><dd><dl><dt><span class="section"><a href="ch16s02.html#d5e1373">Section forms</a></span></dt><dt><span class="section"><a href="ch16s02.html#dataSetSection">Adding a new section form</a></span></dt><dt><span class="section"><a href="ch16s02.html#customDataEntryForm">Custom Forms</a></span></dt><dt><span class="section"><a href="ch16s02.html#d5e1424">Scripting in custom forms</a></span></dt><dt><span class="section"><a href="ch16s02.html#dataSetAssignmentEditor">Data set assignment editor</a></span></dt></dl></dd></dl></div>
+   <title>Chapter&nbsp;16.&nbsp;Data sets and data entry forms</title><link rel="stylesheet" type="text/css" href="resources/css/docbook_bsd.css"><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"><meta name="keywords" content="DHIS2, HMIS, aggregate data, Health Management Information System, Integrated data repository, Health Information System"><link rel="home" href="deans_dashboard_implementation_guide.html" title="Deans Dashboard Implementation Guide"><link rel="up" href="pt03.html" title="Part&nbsp;Volume III: Administrator Guide.&nbsp;Volume III: Administrator Guide"><link rel="prev" href="ch15.html" title="Chapter&nbsp;15.&nbsp;Data elements"><link rel="next" href="ch16s02.html" title="Data Entry Forms"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;16.&nbsp;Data sets and data entry forms</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch15.html">Prev</a>&nbsp;</td><th width="60%" align="center">Part&nbsp;Volume III: Administrator Guide.&nbsp;Volume III: Administrator Guide</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch16s02.html">Next</a></td></tr></table><hr></div><div class="chapter" title="Chapter&nbsp;16.&nbsp;Data sets and data entry forms"><div class="titlepage"><div><div><h2 class="title"><a name="d5e1297"></a>Chapter&nbsp;16.&nbsp;Data sets and data entry forms</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="ch16.html#datasets">Data sets</a></span></dt><dd><dl><dt><span class="section"><a href="ch16.html#dataSet">Data set management</a></span></dt><dt><span class="section"><a href="ch16.html#d5e1359">Data set categories</a></span></dt></dl></dd><dt><span class="section"><a href="ch16s02.html">Data Entry Forms</a></span></dt><dd><dl><dt><span class="section"><a href="ch16s02.html#d5e1373">Section forms</a></span></dt><dt><span class="section"><a href="ch16s02.html#dataSetSection">Adding a new section form</a></span></dt><dt><span class="section"><a href="ch16s02.html#customDataEntryForm">Custom Forms</a></span></dt><dt><span class="section"><a href="ch16s02.html#d5e1424">Scripting in custom forms</a></span></dt><dt><span class="section"><a href="ch16s02.html#dataSetAssignmentEditor">Data set assignment editor</a></span></dt></dl></dd></dl></div>
   
-  <div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="datasets"></a>Data sets</h2></div></div></div>
+  <div class="section" title="Data sets"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="datasets"></a>Data sets</h2></div></div></div>
     
     <p>All data entry in DHIS2 is organised through the use of data sets. You can add and edit
       data sets in Maintenance-&gt;Data sets. A data set is a collection of data elements grouped
@@ -22,14 +22,14 @@
     <p>A data set has several properties that must be entered when creating a new one. Name,
       short name, code and description should be used to identify and describe the data set. The
       other properties deserve an explanation:</p>
-    <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
+    <div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
         <p>Expiry days: Controls for how long it should be possible to enter data in data entry
           for this data set. Expiry days refer to the number of days after the end date of the
           selected data entry period where the data entry form should be open for entry. After the
           number of days has expired, the data set will be locked for further entry. You can set
           manual exceptions to this using the lock exception functionality in data administration
           module.</p>
-        <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="resources/images/admon/note.png"></td><th align="left">Note</th></tr><tr><td align="left" valign="top">
+        <div class="note" title="Note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="resources/images/admon/note.png"></td><th align="left">Note</th></tr><tr><td align="left" valign="top">
           <p>If the number of expiry days is set to zero, this will  allow data entry into all possible historical time periods. </p>
         </td></tr></table></div>
       </li><li class="listitem">
@@ -71,15 +71,15 @@
     <p>Your data set will then be ready to be used in Services-&gt;Data Entry for the org units
       that you have assigned and for periods according to your selected frequency (period
       type).</p>
-    <div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="dataSet"></a>Data set management</h3></div></div></div>
+    <div class="section" title="Data set management"><div class="titlepage"><div><div><h3 class="title"><a name="dataSet"></a>Data set management</h3></div></div></div>
       
       <p>The data set management function allows you to create new data sets and manage existing
         ones. The dialog can be reached by choosing Maintenance-&gt;Data sets-&gt;Data set. A sample
         dialog is displayed below.</p>
       <div class="screenshot">
-        <div class="mediaobject" align="center"><table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0; cellspacing: 0;" width="80%"><tr><td align="center"><img src="resources/images/datasets/datasets_0.png" align="middle" width="100%"></td></tr></table></div>
+        <div class="mediaobject" align="center"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="80%"><tr><td align="center"><img src="resources/images/datasets/datasets_0.png" align="middle" width="100%"></td></tr></table></div>
       </div>
-      <div class="itemizedlist"><p>Click on the name of the dataset you would like to alter, and a context menu will be displayed. Each of the available functions are described below. </p><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
+      <div class="itemizedlist"><p>Click on the name of the dataset you would like to alter, and a context menu will be displayed. Each of the available functions are described below. </p><ul class="itemizedlist" type="disc"><li class="listitem">
           <p>Sort: This controls the custom sort order. Depending on the systems settings, users
             will see the data sets ordered in the specific order which you provide. </p>
         </li><li class="listitem">
@@ -116,7 +116,7 @@
         </li><li class="listitem">
           <p> Delete:
             Completely removes a data set from the system. </p>
-          <div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Warning"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Warning]" src="resources/images/admon/warning.png"></td><th align="left">Warning</th></tr><tr><td align="left" valign="top">
+          <div class="warning" title="Warning" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Warning"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Warning]" src="resources/images/admon/warning.png"></td><th align="left">Warning</th></tr><tr><td align="left" valign="top">
             <p>Any data set which is deleted from the system is irrevocably lost. All data entry
               forms, and section forms which may have been developed will also be removed. Ensure
               that you have made a backup of your database before deleting any data set in case you
@@ -129,7 +129,7 @@ Show details: Display some informative information about the data set, including
             the data set.</p>
         </li></ul></div>
     </div>
-    <div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d5e1359"></a>Data set categories</h3></div></div></div>
+    <div class="section" title="Data set categories"><div class="titlepage"><div><div><h3 class="title"><a name="d5e1359"></a>Data set categories</h3></div></div></div>
       
       <p>Before reading this section it is recommended to familiarize oneself with the sections
         on categories in the data element chapter. Whereas data element categories can be used for
@@ -152,7 +152,7 @@ Show details: Display some informative information about the data set, including
         rendered as drop-down boxes, allowing you to select a specific implementing partner
         organisation and project before continuing to do data entry.</p>
       <div class="screenshot">
-        <div class="mediaobject" align="center"><table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0; cellspacing: 0;" width="80%"><tr><td align="center"><img src="resources/images/datasets/dataset-categories.png" align="middle" width="100%"></td></tr></table></div>
+        <div class="mediaobject" align="center"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="80%"><tr><td align="center"><img src="resources/images/datasets/dataset-categories.png" align="middle" width="100%"></td></tr></table></div>
       </div>
     </div>
   </div>
