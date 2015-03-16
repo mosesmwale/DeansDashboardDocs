@@ -1,4 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
 <!DOCTYPE glossary PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd" []>
 <glossary id="dhis2_glossary">
   <glossaryinfo>
@@ -15,13 +16,13 @@
     <glossentry>
       <glossterm>Aggregation</glossterm>
       <glossdef>
-        <para>In the context of DHIS2, aggregation refers to how data elements are combined within a particular hierarchical relationship. As an example, all the health facilities in a particular district would contribute to the total value for the particular district in question. Different aggregation operators are supported within DHIS2, such as SUM, AVERAGE, and COUNT.</para>
+        <para>In the context of DHIS2, aggregation refers to how data elements are combined within a particular hierarchical relationship. As an example, all the academic departments in a particular school would contribute to the total value for the particular school in question. Different aggregation operators are supported within DHIS2, such as SUM, AVERAGE, and COUNT.</para>
       </glossdef>
     </glossentry>
     <glossentry>
       <glossterm baseform="aggregateData">Aggregate data</glossterm>
       <glossdef>
-        <para>In the context of DHIS2, aggregate data refers to either data elements or indicators that have been derived from other hierarchical data sources. For instance, aggreagte facility data would result from the aggregate totals of all patients that have attended that facility for a particular service. Aggregate district data would result from the aggregate totals of all facilities contained with a particular district.</para>
+        <para>In the context of DHIS2, aggregate data refers to either data elements or indicators that have been derived from other hierarchical data sources. For instance, aggregate departmental data would result from the aggregate totals of all students that have attended courses that department for a particular training program. Aggregate district data would result from the aggregate totals of all academic departments in that particular training program. </para>
       </glossdef>
     </glossentry>
     <glossentry>
@@ -46,24 +47,28 @@
     <glossentry>
       <glossterm>Category</glossterm>
       <glossdef>
-        <para>Categories are groups of category options. The are used in combinations to disaggregate data elements. Categories are typically a single type of concept, such as &quot;Age&quot; or &quot;Gender&quot;. </para>
+        <para>Categories are groups of category options. They are used in combinations to disaggregate data elements. Categories are typically a single type of concept, such as &quot;Age&quot; , &quot;Gender&quot;,&quot;Race&quot;,&quot;Geographic Location&quot;, &quot;Employment status&quot;, &quot;Socio-economic status&quot;. </para>
       </glossdef>
     </glossentry>
     <glossentry>
       <glossterm>Category combinations</glossterm>
       <glossdef>
-        <para>Category combinations are used to disaggreate data elements. As an example, the data element &quot;Number of confirmed cases of malaria&quot; could be disaggregated subdivided into to categories:  &quot;Age&quot; and &quot;Gender&quot;. In turn each of these categories, would consist of several category options, such as &quot;Male&quot; and &quot;Female&quot; for the gender category. Category combinations may consist of one or several categories. </para>
+        <para>Category combinations are used to disaggregate data elements. As an example, the data element &quot;Number of confirmed cases of malaria&quot; could be disaggregated subdivided into categories: &quot;Age&quot; and &quot;Gender&quot;. In turn each of these categories, would consist of several category options, such as &quot;Male&quot; and &quot;Female&quot; for the gender category, “black&quot;, “white&quot;and “mixed race&quot;for race category; Urban&quot; and “rural&quot; for geographical location category;&quot; income or expenditure quintiles for socio-economic status category; “Diploma&quot;, “Bachelors&quot;, “Masters&quot;, “PhD&quot;for level of study category; “lecturer&quot;, “senior lecturer&quot;, associate professor&quot;, “professor&quot;for academic rank category; “permanent&quot;and “temporary&quot; for employment status category; “medicine&quot;, “nursing&quot;, “pharmacy&quot;, “&quot;nutrition&quot;, e.t.c. for academic program category.Category combinations may consist of one or several categories. </para>
       </glossdef>
     </glossentry>
     <glossentry>
       <glossterm>Category combination options</glossterm>
       <glossdef>
-        <para>Category combination options are dynamically composed of all of the different combinations of category options which compose a category combination. As an example, two categories &quot;Gender&quot; and &quot;Age&quot;, might have options such as &quot;Male&quot;/&quot;Female&quot; and &quot;&lt;5 years&quot;/&quot;&gt;5 years&quot;. The category combination options would then consist of:</para>
+        <para>Category combination options are dynamically composed of all of the different combinations of category options which compose a category combination. As an example, two categories &quot;Gender&quot; and &quot;Academic Rank&quot;, might have options such as &quot;Male&quot;/&quot;Female&quot; and &quot;Professor&quot;/&quot;Associate Professor&quot;/&quot;Senior Lecturer&quot;/&quot;Lecturer&quot;. The category combination options would then consist of:</para>
         <simplelist>
-          <member>(Male/&lt;5 years)</member>
-          <member>(Male/&gt;5 years)</member>
-          <member>(Female/&lt;5 years)</member>
-          <member>(Female/&gt;5 years)</member>
+          <member>(Male/Professor)</member>
+          <member>(Male/Associate Professor)</member>
+          <member>(Male/Senior Lecturer)</member>
+          <member>(Male/Lecturer)</member>
+          <member>(Female/Professor)</member>
+          <member>(Female/Associate Professor)</member>
+          <member>(Female/Senior Lecturer)</member>
+          <member>(Female/Lecturer)</member>
         </simplelist>
       </glossdef>
     </glossentry>
@@ -104,13 +109,13 @@
     <glossentry>
       <glossterm>Data element</glossterm>
       <glossdef>
-        <para>A data element is the fundamental building block of DHIS2. It is an atomic unit of data with well-defined meaning. Essentially it is a data value that has been actually observed or recorded which is further characterized by a number of dimensions. As an example the data element &quot;Number of fully immunized children&quot; would refer to the number of children that received this particular service. Data elements are always linked to a period as as well as an organizational unit. They optionally may be linked to other dimensions. </para>
+        <para>A data element is the fundamental building block of DHIS2. It is an atomic unit of data with well-defined meaning. Essentially it is a data value that has been actually observed or recorded which is further characterized by a number of dimensions. Examples are: applications (head counts) per educational program in the institution; enrollment (head counts) per educational program in the institution; course repeat rate; year repeat rate; attrition rate; retention rate; success rate; graduation rate; throughput rate; certification ratehead count of academic staff; headcount of administrative staff; academic staff qualification; institutional unit income; institutional unit expenditure; cost of training a graduate; source of financial support to students. Data elements are always linked to a period as well as an organizational unit. They optionally may be linked to other dimensions.</para>
       </glossdef>
     </glossentry>
     <glossentry>
       <glossterm>Data element group</glossterm>
       <glossdef>
-        <para>Data element groups are used to categorize multiple data elements according to a common theme, such as &quot;Immunization&quot; or &quot;ART&quot;. Typically, they are used during reporting and analysis to allow related data elements to be analyzed together. </para>
+        <para>Data element groups are used to categorize multiple data elements according to a common theme, such as .Student selection, admission and numbers; Student progression and achievement; Student development support and guidance; Teaching and Learning; Research; Human Resources; Budgeting and fiscal management; Alumni tracking. Typically, they are used during reporting and analysis to allow related data elements to be analyzed together.</para>
       </glossdef>
     </glossentry>
     <glossentry>
@@ -130,33 +135,12 @@
       <glosssee> Data exchange format</glosssee>
     </glossentry>
   </glossdiv>
-<!-- <glossdiv>
-    <title>E</title>
-  </glossdiv>
-  <glossdiv>
-    <title>F</title>
-  </glossdiv>
-  <glossdiv>
-    <title>G</title>
-  </glossdiv>
   <glossdiv>
     <title>E</title>
-  </glossdiv>
-  <glossdiv>
-    <title>F</title>
-  </glossdiv>
-  <glossdiv>
-    <title>G</title>
-  </glossdiv>
-  <glossdiv>
-    <title>H</title>
-  </glossdiv> -->  <glossdiv>
-    <title>H</title>
     <glossentry>
-      <glossterm>Health management information system</glossterm>
-      <abbrev>HMIS</abbrev>
+      <glossterm>Education Management Information System (EMIS)</glossterm>
       <glossdef>
-        <para>Typically, an electronic database system that is used to record aggregated data on service delivery, disease incidence, human resource data and other information used to evaluate the performance of delivery of health services. Typically, an HMIS does not contain the highly detailed data of electronic medical record systems or individual patient data. </para>
+        <para>Typically, an electronic database system that is used to record aggregated data on academic performance, financial performance, infrastructure,  human resource data and other information used to evaluate the performance of higher educational institutions.  Some of the commonly used educational data management systems include the enterprise resource planning (ERP) systems, the learning management systems (LMS), and the Integrated Tertiary Software (ITS). UNESCO has developed an open-source system called Open EMIS that can be easily modified and adapted to the needs of secondary and tertiary educational institutions (https://www.openemis.org/products/school)</para>
       </glossdef>
     </glossentry>
   </glossdiv>
@@ -202,14 +186,14 @@
       <glossterm>Organisational unit</glossterm>
       <abbrev>orgunit</abbrev>
       <glossdef>
-        <para>An organisational unit is usually a geographical unit, which exists within  hierarchy.  As an example, in the United States, &quot;Georgia&quot; would be considered an organisational unit with in the orgunit level of &quot;State&quot;. Organizational units can also be used to specify an administrative unit, such as a ward within a hospital. The organisational unit dimension specifies essentially &quot;where&quot; a particular data value occurs.</para>
+        <para>Organizational units in educational context is used to specify an administrative unit, such as an academic department within a Faculty. The organisational unit dimension specifies essentially &quot;where&quot; a particular data value occurs.</para>
       </glossdef>
     </glossentry>
     <glossentry>
       <glossterm>Organisational unit level</glossterm>
       <abbrev>Orgunit level</abbrev>
       <glossdef>
-        <para>Refers to a level within an organizational hierarchy. Typically, countries are administered at different levels, such as 1) Country 2) States 3) Counties 4) Health facilities. In the context of DHIS2, health facilities typically are the lowest orgunit level. Data is aggregated upwards from the lowest orgunit level to the highest. </para>
+        <para>Refers to a level within an organizational hierarchy. Typically, higher educational institutions are administered at different levels, such as 1)college 2) Faculty 3) School 4) Academic Department. In the context of DHIS2,academic departments typically are the lowest orgunit level. Data is aggregated upwards from the lowest orgunit level to the highest. </para>
       </glossdef>
     </glossentry>
   </glossdiv>
