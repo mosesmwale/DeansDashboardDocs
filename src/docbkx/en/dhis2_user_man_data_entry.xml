@@ -5,27 +5,29 @@
   <section id="dataEntry">
     <title>Data entry with DHIS 2</title>
     <para>To open the data entry window click on the services tab displayed in the main menu. A
-    drop down menu will appear listing the services provided by DHIS 2. Click
-    on the <guibutton>Data Entry</guibutton> option.</para>
-    <para>The data entry module is where data is manually registered in the DHIS 2 database. Data is registered for an organisation unit, a period, and a set of data elements (data set) at a time. A data set often corresponds to a paper-based data collection tool. </para>
+    drop down menu will appear listing the services provided by DHIS 2. To use the data entry module, simply search for &quot;<guibutton>Data Entry&quot;</guibutton> in the &quot;Apps&quot; menu.</para>
+    <para>The data entry module is where data is manually registered in the DHIS 2 database. Data is registered for an organisation unit (also known as an orgunit) , a period, and a set of data elements at a time. </para>
+    <para>In the context of the Deans Dashboard, you would normally be entering data for a specific unit, such as a faculty or school. </para>
     <section>
       <title>Selecting the data entry form</title>
-      <para>To start entering data the first step is to open the correct form by following these
+      <para>To start entering data, the first step is to open the correct form by following these
         steps:</para>
       <orderedlist>
         <listitem>
           <para>Locate the orgunit you want to register data for in the tree menu to the left.
-            Expand and close branches by clicking on the +/- symbols. A quick way to find an orgunit
-            is to use the search box just above the tree (the green symbol), but you need to write
-            in the full name to get a match.</para>
+You can expand a branch of the organisation unit tree by clicking on the <emphasis role="bold">+</emphasis> symbol to the left of the name of the orgunit you are interested in. You can close a branch of thr orgunit tree by clicking on the <emphasis role="bold">-</emphasis>  symbol to the left of the orgunit you are interested in.   A quick way to find an orgunit
+            is to use the search box just above the tree (the green symbol). Once you have located the orgunit, click on the name. The name of the orgunit should now be highlighted in  orange when selected. </para>
         </listitem>
         <listitem>
-          <para>Select a data set from the dropdown list of data sets available to your selected orgunit.  </para>
+          <para>Once you have selected an orgunit from the tree, a possible list of data sets will be displayed in the drop -down box called &quot;Datasets&quot;. Select a data set from the drop-down list of data sets.  </para>
         </listitem>
         <listitem>
-          <para>Select a period to register data for. The available periods are controlled by the
+          <para>Next, select a period to register data for. The available periods are controlled by the
             period type of the data set (reporting frequency). You can jump a year back or forward
-            by using the arrows above the period.</para>
+            by using the arrows above the period. For some data sets, you may not be able to enter data in the future.</para>
+        </listitem>
+        <listitem>
+          <para>Certain datasets may have an attribute. If the dataset has one, it will be displayed below the period drop-down box after you select the period you are entering data for. Select the appropriate attribute. </para>
         </listitem>
       </orderedlist>
       <para>By now you should see the data entry form. From a form design perspective, there are
@@ -88,13 +90,13 @@
       </screenshot>
     </section>
     <section>
-      <title>Offline data entry</title>
+      <title>Off-line data entry</title>
       <para>The data entry module will function even if during data entry the Internet connectivity
         is not stable. In order to utilize this functionality, you must login to the server while
         Internet connectivity is present, but if during data entry, the Internet link between your
         computer and the server becomes unstable, data can still be entered into the data entry
         form, saved to your local computer, and then pushed to the server once the Internet
-        connectivity has been restored. Data can be entered and stored locally while being offline
+        connectivity has been restored. Data can be entered and stored locally while being off-line
         and uploaded to the central server when on-line. This means that the on-line deployment
         strategy will be more viable in areas with unstable Internet connectivity. The total
         bandwidth usage is greatly reduced since forms no longer are retrieved from the server for
