@@ -37,7 +37,7 @@
             A copy of the license is included in the source of this documentation, and is available here online:<ulink url="http://www.gnu.org/licenses/fdl.html"> http://www.gnu.org/licenses/fdl.html</ulink>.</para>
     </formalpara>
 </legalnotice>
-    <revhistory xml:base="../../../build.properties"><revision><revnumber>Revision  1381</revnumber><date>2015-03-16 11:00:25</date><revremark>Version 2.17 2015-03-16 11:00:25</revremark></revision></revhistory>
+    <revhistory xml:base="../../../build.properties"><revision><revnumber>Revision  1383</revnumber><date>2015-03-27 08:24:47</date><revremark>Version 2.17 2015-03-27 08:24:47</revremark></revision></revhistory>
 </bookinfo>
   <!-- This document was created with Syntext Serna Free. --><preface>
   <title>About this guide</title>
@@ -138,7 +138,127 @@
     </para>
   </section>
 </chapter>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="deans_dashboard_implementation_guide_readiness.xml" encoding="UTF-8"/>
+    <!-- This document was created with Syntext Serna Free. --><chapter>
+  <title>Organizational Readiness</title>
+ 
+  <section>
+    <title>Resources and Infrastructure</title>
+    <para>
+      In terms of infrastructure needed, two options exist—in the cloud or local to the institution. Small institutions may prefer to pay for a cloud-based implementation (that is, to access and use the software entirely online) as purchasing and maintaining servers may be prohibitive. Institutions with strong ICT units may prefer to install the software locally in their data centers. Configuring and implementing the system is not overly complex, but support will be essential to new users.
+    </para>
+  </section>
+  <section>
+    <title>Organizational Readiness</title>
+    <para>
+      Is Your Organization Ready for the Dean’s Dashboard?
+    </para>
+    <para>
+      Answering these questions can help your institution understand its level of readiness to initiate the Dean’s Dashboard program. You may find it helpful to have a colleague review your responses or to answer the questions with a larger group (e.g., senior leaders).  Has your institution clearly defined the need to use the Dean’s Dashboard?
+
+    </para>
+    <orderedlist numeration="arabic">
+      <listitem><para>
+	Have you clearly defined the need that is driving your institution to consider implementing the Dean’s Dashboard?
+	<blockquote><para>
+	  An organization is more likely to be ready to undertake a Dean’s Dashboard initiative when it has objective information to support the need for improving specific areas. 
+	</para></blockquote>
+      </para></listitem>
+      <listitem><para>
+	Who in your organization uses information to guide decision making and process improvement?
+	<blockquote><para>
+	  Dean’s Dashboard is an information system that offers informational reports on a number of indicators important to your institution. Understanding than one individual or a team of persons using that information can affect how successful it can be for addressing your situation. 
+	</para></blockquote>
+      </para></listitem>
+      <listitem><para>
+	Is now the right time for implementing an information tool such as the Dean’s Dashboard (i.e., it will not compete with other major changes currently being made at your institution)?
+	<blockquote><para>
+	  If your organization is currently experiencing many changes, it may not be the ideal moment to begin implementing the Dean’s Dashboard initiative. Attempting to manage multiple change efforts at one time may degrade your institution's ability and employees' willingness to implement and sustain the Dean’s Dashboard effort. The program may be viewed as a distraction rather than a solution.
+	</para></blockquote>
+      </para></listitem>
+      <listitem><para>
+	Will your institution's leaders support the effort required to implement and sustain the Dean’s Dashboard initiative?
+	<blockquote><para>
+	  It is essential that the leaders of your institution actively support and champion Dean’s Dashboard. Leaders needs to understand the requirements of the program (e.g., identification of indicators in an iterative process spanning several weeks, technical preparation and training of system users, regular meetings to reinforce concepts and skills) and be willing to provide the personnel, time, and resources required to successfully implement and sustain the program. 
+	</para></blockquote>
+      </para></listitem>
+      <listitem><para>
+	Will your institution provide sufficient staff with the necessary skills and time to support the development and implementation and use of the Dean’s Dashboard?
+	<blockquote><para>
+	  It is important to find individuals with the right characteristics to serve as users to increase the success of the Dean’s Dashboard initiative. 
+	</para></blockquote>
+      </para></listitem>
+      <listitem><para>
+	Will your institution allow time for personnel to attend training?
+	<blockquote><para>
+	  While the Dean’s Dashboard will be designed by participating institutions, some direct staff training will be required. The full training element of the program includes up to XX hours of classroom learning; however, your institution may decide to train only one segment (e.g., a specific indicator or set of related indicators) that may require 1 hour. To preclude disruptions and scheduling problems and to maximize learning, participants should be excused from all duties while attending class.
+	</para></blockquote>
+      </para></listitem>
+    </orderedlist>
+  </section>
+
+  <section>
+    <title>Best practices in planning deployment/project management</title>
+    <section>
+      <title>Stakeholder Engagement</title>
+      <para>
+	A dashboard development committee can be composed of the following stakeholders:
+	<orderedlist numeration="arabic">
+	  <listitem><para>Director of the School of Medicine (Chair) </para></listitem>
+	  <listitem><para>Faculty Administrator      </para></listitem>
+	  <listitem><para>Coordinator of the Undergraduate training programs      </para></listitem>
+	  <listitem><para>Coordinator of the Registrar (Residency) training program       </para></listitem>
+	  <listitem><para>Faculty examination officer      </para></listitem>
+	  <listitem><para>Representative of the Nurse training program      </para></listitem>
+	  <listitem><para>Representative of the Allied Health training programs       </para></listitem>
+	  <listitem><para>Representative of the Academic Planning unit      </para></listitem>
+	  <listitem><para>Representative of the Institutional Finance Department      </para></listitem>
+	  <listitem><para>Representative of the Human Resource Department.      </para></listitem>
+	</orderedlist>
+      </para>
+  <section>
+    <title>Key Questions</title>
+    The Stakeholder Leadership Group should consider the following questions:
+    <orderedlist>
+      <listitem><para>What indicators that needed to be tracked on regular basis – should they just be educational (student performance) indicators or should issues related to program administration be included.</para></listitem>
+      <listitem><para>At what level should the dashboard operate – should it be at departmental level, school level, or at Faculty level?</para></listitem>
+      <listitem><para>Who would run the project – sourcing the data and handling the data </para></listitem>
+      <listitem><para>Was there sufficient expertise in IT within the Faculty to develop the Dashboard?</para></listitem>
+      <listitem><para>Did the Faculty have the infrastructure to house the dashboard – the computer server and the necessary software?</para></listitem>
+      <listitem><para>How much would it cost the Faculty per annum to run this project?</para></listitem>
+    </orderedlist>
+  </section>
+    </section>
+    <section>
+      <title>project management</title>
+      <para/>
+    </section>
+    <section>
+      <title>defining scope</title>
+      <para>	
+	The dashboard development committee decides on which indicators for each of the identified key performance areas would be tracked, and how often these indicators would be monitored.
+      </para>
+    </section>
+  </section>
+  <section>
+    <title>Getting data:</title>
+    <section>
+      <title>What is on the dashboard?</title>
+      <para/>
+    </section>
+    <section>
+      <title>Where does the data come from?</title>
+      <para/>
+    </section>
+    <section>
+      <title>who has the data</title>
+      <para/>
+    </section>
+    <section>
+      <title>what parts of the institution have the data</title>
+      <para/>
+    </section>
+  </section>
+</chapter>
     <!-- This document was created with Syntext Serna Free. --><chapter>
   <title>Key Indicators</title>
  
@@ -869,27 +989,29 @@ password. After entering the required information click on log-in button
   <section id="dataEntry">
     <title>Data entry with DHIS 2</title>
     <para>To open the data entry window click on the services tab displayed in the main menu. A
-    drop down menu will appear listing the services provided by DHIS 2. Click
-    on the <guibutton>Data Entry</guibutton> option.</para>
-    <para>The data entry module is where data is manually registered in the DHIS 2 database. Data is registered for an organisation unit, a period, and a set of data elements (data set) at a time. A data set often corresponds to a paper-based data collection tool. </para>
+    drop down menu will appear listing the services provided by DHIS 2. To use the data entry module, simply search for "<guibutton>Data Entry"</guibutton> in the "Apps" menu.</para>
+    <para>The data entry module is where data is manually registered in the DHIS 2 database. Data is registered for an organisation unit (also known as an orgunit) , a period, and a set of data elements at a time. </para>
+    <para>In the context of the Deans Dashboard, you would normally be entering data for a specific unit, such as a faculty or school. </para>
     <section>
       <title>Selecting the data entry form</title>
-      <para>To start entering data the first step is to open the correct form by following these
+      <para>To start entering data, the first step is to open the correct form by following these
         steps:</para>
       <orderedlist>
         <listitem>
           <para>Locate the orgunit you want to register data for in the tree menu to the left.
-            Expand and close branches by clicking on the +/- symbols. A quick way to find an orgunit
-            is to use the search box just above the tree (the green symbol), but you need to write
-            in the full name to get a match.</para>
+You can expand a branch of the organisation unit tree by clicking on the <emphasis role="bold">+</emphasis> symbol to the left of the name of the orgunit you are interested in. You can close a branch of thr orgunit tree by clicking on the <emphasis role="bold">-</emphasis>  symbol to the left of the orgunit you are interested in.   A quick way to find an orgunit
+            is to use the search box just above the tree (the green symbol). Once you have located the orgunit, click on the name. The name of the orgunit should now be highlighted in  orange when selected. </para>
         </listitem>
         <listitem>
-          <para>Select a data set from the dropdown list of data sets available to your selected orgunit.  </para>
+          <para>Once you have selected an orgunit from the tree, a possible list of data sets will be displayed in the drop -down box called "Datasets". Select a data set from the drop-down list of data sets.  </para>
         </listitem>
         <listitem>
-          <para>Select a period to register data for. The available periods are controlled by the
+          <para>Next, select a period to register data for. The available periods are controlled by the
             period type of the data set (reporting frequency). You can jump a year back or forward
-            by using the arrows above the period.</para>
+            by using the arrows above the period. For some data sets, you may not be able to enter data in the future.</para>
+        </listitem>
+        <listitem>
+          <para>Certain datasets may have an attribute. If the dataset has one, it will be displayed below the period drop-down box after you select the period you are entering data for. Select the appropriate attribute. </para>
         </listitem>
       </orderedlist>
       <para>By now you should see the data entry form. From a form design perspective, there are
@@ -952,13 +1074,13 @@ password. After entering the required information click on log-in button
       </screenshot>
     </section>
     <section>
-      <title>Offline data entry</title>
+      <title>Off-line data entry</title>
       <para>The data entry module will function even if during data entry the Internet connectivity
         is not stable. In order to utilize this functionality, you must login to the server while
         Internet connectivity is present, but if during data entry, the Internet link between your
         computer and the server becomes unstable, data can still be entered into the data entry
         form, saved to your local computer, and then pushed to the server once the Internet
-        connectivity has been restored. Data can be entered and stored locally while being offline
+        connectivity has been restored. Data can be entered and stored locally while being off-line
         and uploaded to the central server when on-line. This means that the on-line deployment
         strategy will be more viable in areas with unstable Internet connectivity. The total
         bandwidth usage is greatly reduced since forms no longer are retrieved from the server for
